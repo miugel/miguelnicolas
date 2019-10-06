@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&display=swap');
 
 /* 
 http://meyerweb.com/eric/tools/css/reset/ 
@@ -71,21 +71,28 @@ body {
 	border-radius: 25px;
 	height: 30%;
 	width: 25%;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .text h1 {
-	font-size: 30px;
+	font-size: 32px;
 	color: #09091a;
 }
+
 .text p {
 	color: #09091a;
+	font-size: 24px;
 }
 
 .icons a i {
 	color: #09091a;
+}
+
+.icons a i:hover {
+	color: #222233;
 }
