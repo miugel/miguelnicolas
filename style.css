@@ -111,11 +111,13 @@ section p {
 
 .icons a i {
 	color: #09091a;
-	font-size: 32px;
+	font-size: 28px;
+	transition: .5s ease-in-out;
 }
 
 .icons a i:hover {
-	opacity: 0.75;
+	opacity: 0.5;
+
 }
 
 footer {
