@@ -115,7 +115,7 @@ section p {
 }
 
 .icons a i:hover {
-	color: #c0c0c8;
+	opacity: 0.75;
 }
 
 footer {
