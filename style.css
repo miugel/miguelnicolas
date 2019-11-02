@@ -1,86 +1,120 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500&display=swap');
-
-/* 
-http://meyerweb.com/eric/tools/css/reset/ 
-v2.0 | 20110126
-License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
+* {
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-/* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 
 body {
-	line-height: 1;
-}
-
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* my code */
-
-body {
-	background: linear-gradient(tomato, lightsalmon);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
+	max-width: 1024px;
+	margin: 0 auto;
+	background: linear-gradient(to right, #36d1dc , #5b86e5);
+	font-family: 'Roboto', sans-serif;
 }
 
 header {
-	position: absolute;
-	top: 10px;
-	left: 10px;
+	height: 10vh;
+	display: flex;
+	align-items: center;
 }
 
 header img {
-	height: 50px;
-	transition: 0.25s ease;
+	height: 3rem;	
 }
 
 header img:hover {
-	height: 55px;
+	height: 4rem;
+	transition: 0.25s ease;
+	/* not sure if i will keep this transition, take note of how it loads */
 }
 
+.introduction {
+	height: 80vh;
+	color: whitesmoke;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.arrow {
+	height: 10vh;
+	color: whitesmoke;
+	font-size: 1.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.arrow i:hover {
+	margin-bottom: 1rem;
+	transition: 0.25s ease;
+}
+
+.projects {
+	margin: 5rem 0;
+	background: whitesmoke;
+	color: #09091a;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.projects h2 {
+	margin: 5rem 0;
+}
+
+.projects div {
+	padding-bottom: 5rem;
+	color: #09091a;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.projects div img {
+	height: 25rem;
+	margin-bottom: 1rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projects div h3 {
+	margin-bottom: 0.25rem;
+}
+
+.projects div p {
+	margin-bottom: 0.25rem;
+}
+
+.projects div a {
+	text-decoration: none;
+	color: #09091a;
+}
+
+.projects div a:hover {
+	opacity: 0.75;
+}
+
+.projects div i {
+	margin: 0 0.25rem;
+	font-size: 1.5rem;
+}
+
+footer {
+	height: 20vh;
+	color: whitesmoke;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*
 section {
 	background-color: white;
 	border-radius: 25px;
@@ -119,12 +153,4 @@ section p {
 	opacity: 0.5;
 
 }
-
-footer {
-	font-size: 14px;
-	font-family: 'Raleway', sans-serif;
-	position: absolute;
-	bottom: 10px;
-	color: white;
-	font-weight: 300;
-}
+*/
