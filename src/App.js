@@ -63,7 +63,7 @@ const Container = styled.div`
 			transition: 0.25s ease-in-out;
 
 			:hover {
-				opacity: 0.75;
+				opacity: 0.5;
 			}
 		}
 	}
