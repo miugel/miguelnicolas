@@ -22,7 +22,7 @@ const Container = styled.div`
 	}
 
 	p {
-		margin-bottom: 8px;
+		margin-bottom: 16px;
 		font-size: 1rem;
 		font-weight: 500;
 		text-align: center;
@@ -35,26 +35,28 @@ const Container = styled.div`
 	}
 
 	.buttons {
-		margin-bottom: 8px;
+		margin-bottom: 16px;
 		display: flex;
 		justify-content: space-evenly;
 		opacity: 0;
 
-		button {
-			margin: 0 0.25rem;
-			padding: 4px 8px;
-			background: #EFF3F6;
-			border: 1px solid lightgray;
-			border-radius: 3px;
-			outline: none;
-			font-family: 'Quicksand', sans-serif;
-			font-size: 0.75rem;
-			font-weight: 500;
-			cursor: pointer;
-			transition: 0.25s ease-in-out;
+		a {
+			button {
+				margin: 0 0.25rem;
+				padding: 4px 8px;
+				background: #EFF3F6;
+				border: 1px solid lightgray;
+				border-radius: 3px;
+				outline: none;
+				font-family: 'Quicksand', sans-serif;
+				font-size: 0.75rem;
+				font-weight: 500;
+				cursor: pointer;
+				transition: 0.25s ease-in-out;
 
-			:hover {
-				border: 1px solid gray;
+				:hover {
+					border: 1px solid gray;
+				}
 			}
 		}
 	}
@@ -97,13 +99,13 @@ const App = () => {
                 delay: 0.2
             }
         );
-        // TweenMax.to(buttons, 1, {
-        //         opacity: 1,
-        //         y: -50,
-        //         ease: Power3.easeOut,
-        //         delay: 0.3
-        //     }
-        // );
+        TweenMax.to(buttons, 1, {
+                opacity: 1,
+                y: -50,
+                ease: Power3.easeOut,
+                delay: 0.3
+            }
+        );
         TweenMax.to(icons, 1, {
                 opacity: 1,
                 y: -50,
@@ -117,12 +119,12 @@ const App = () => {
 		<Container>
 			<h1 ref={element => {name = element}}>miguel nicolas</h1>
 			<p ref={element => {bio = element}}>Hi! I'm a front end software engineer based in New Jersey. Currently attending Lambda School.</p>
-			{/* <div className='buttons' ref={element => {buttons = element}}>
-				<button>Skills</button>
-				<button>Projects</button>
-				<button>Resume</button>
-				<button>Blog</button>
-			</div> */}
+			<div className='buttons' ref={element => {buttons = element}}>
+				{/* <button>Skills</button>
+				<button>Projects</button> */}
+				<a href='https://drive.google.com/file/d/1UE3d9wdHmqvzTADKTcEqM94HBSp4Zf8z/view?usp=sharing' target='_blank' rel="noopener noreferrer"><button>Resume</button></a>
+				{/* <button>Blog</button> */}
+			</div>
 			<div className='icons' ref={element => {icons = element}}>
 				<a href='https://github.com/miugel' target='_blank' rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
 				<a href='https://www.linkedin.com/in/miguelqnicolas/' target='_blank' rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
