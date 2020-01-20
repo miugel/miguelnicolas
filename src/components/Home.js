@@ -6,7 +6,6 @@ import {gsap, TweenMax, Power3} from 'gsap';
 gsap.registerPlugin(TweenMax, Power3);
 
 const HomeContainer = styled.div`
-	max-width: 500px;
 	height: 100vh;
 	width: 90%;
 	margin: 0 auto;
@@ -19,6 +18,7 @@ const HomeContainer = styled.div`
 		margin-bottom: 8px;
 		font-size: 2rem;
 		font-weight: 700;
+		color: #484848;
 		opacity: 0;
 	}
 
@@ -26,13 +26,9 @@ const HomeContainer = styled.div`
 		margin-bottom: 16px;
 		font-size: 1rem;
 		font-weight: 500;
+		color: #484848;
 		text-align: center;
 		opacity: 0;
-	}
-
-	a {
-		text-decoration: none;
-		color: dodgerblue;
 	}
 
 	.buttons {
@@ -43,20 +39,20 @@ const HomeContainer = styled.div`
 
 		a {
 			button {
-				margin: 0 0.25rem;
+				margin: 0 4px;
 				padding: 4px 8px;
-				background: #EFF3F6;
-				border: 1px solid lightgray;
+				background: white;
+				border: 1px solid darkgray;
 				border-radius: 3px;
 				outline: none;
 				font-family: 'Quicksand', sans-serif;
-				font-size: 0.75rem;
+				font-size: 1rem;
 				font-weight: 500;
 				cursor: pointer;
-				transition: 0.25s ease-in-out;
+				transition: 0.25s;
 
 				:hover {
-					border: 1px solid gray;
+					border: 1px solid #484848;
 				}
 			}
 		}
@@ -64,16 +60,17 @@ const HomeContainer = styled.div`
 
 	.icons {
 		opacity: 0;
+
 		a {
 			i {
 				margin: 0 0.25rem;
 				font-size: 1.5rem;
-				color: black;
-			}
-			transition: 0.25s ease-in-out;
-
-			:hover {
-				opacity: 0.5;
+				color: #484848;
+				transition: 0.25s;
+			
+				:hover {
+					color: darkgray;
+				}
 			}
 		}
 	}
