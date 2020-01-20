@@ -1,13 +1,15 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
-import farmfresh from '../img/farmfresh.png';
-import githubclone from '../img/githubclone.png';
-import guacmarket from '../img/guacmarket.png';
-import whenwilliretire from '../img/whenwilliretire.png';
-import split from '../img/split1.png';
-import yodebt from '../img/yodebt1.png';
-import miguelnicolas from '../img/miguelnicolas.png';
+import opti from '../img/opti.png';
+import farmfresh from '../img/farmfresh.jpg';
+import githubclone from '../img/githubclone.jpg';
+import numbers from '../img/numbers.jpg';
+import guacmarket from '../img/guacmarket.jpg';
+import whenwilliretire from '../img/whenwilliretire.jpg';
+import split from '../img/split.jpg';
+import yodebt from '../img/yodebt.jpg';
+import miguelnicolas from '../img/miguelnicolas.jpg';
 
 const ProjectsContainer = styled.div`
     width: 500px;
@@ -92,6 +94,15 @@ const Projects = () => {
             <h1>Projects</h1>
 
             <div className='project'>
+                <img src={opti} alt='website'/>
+                <h2>Opti</h2>
+                <p>Using historical data to determine the optimal price for an AirBnB</p>
+                <p className='tech-stack'>styled-components, React, Redux, React Router, axios</p>
+                <a href='https://opti.netlify.com/' target='_blank' rel="noopener noreferrer"><button>visit website</button></a>
+                <a href='https://github.com/Build-Week-Airbnb-Optimal-Price-4/Front-End' target='_blank' rel="noopener noreferrer"><button>repository</button></a>
+            </div>
+
+            <div className='project'>
                 <img src={farmfresh} alt='website'/>
                 <h2>Farm Fresh</h2>
                 <p>A web application that connects farmers with a surplus amount of food and the local community</p>
@@ -107,6 +118,15 @@ const Projects = () => {
                 <p className='tech-stack'>HTML, CSS, styled-components, JavaScript, React, axios</p>
                 <a href='https://githubclone.guacdev.com/' target='_blank' rel="noopener noreferrer"><button>visit website</button></a>
                 <a href='https://github.com/miugel/guacDev/tree/githubclone' target='_blank' rel="noopener noreferrer"><button>repository</button></a>
+            </div>
+
+            <div className='project'>
+                <img src={numbers} alt='website'/>
+                <h2>Numbers</h2>
+                <p>A real estate investment analyzer</p>
+                <p className='tech-stack'>styled-components, React, axios</p>
+                <a href='https://numbers.netlify.com/' target='_blank' rel="noopener noreferrer"><button>visit website</button></a>
+                <a href='https://github.com/numbersapp/Front-End' target='_blank' rel="noopener noreferrer"><button>repository</button></a>
             </div>
 
             <div className='project'>
