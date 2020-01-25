@@ -7,7 +7,7 @@ gsap.registerPlugin(TweenMax, Power3);
 
 const HomeContainer = styled.div`
 	height: 100vh;
-	width: 90%;
+	width: 304px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -18,7 +18,7 @@ const HomeContainer = styled.div`
 		margin-bottom: 8px;
 		font-size: 2rem;
 		font-weight: 700;
-		color: #484848;
+		color: #38416F;
 		opacity: 0;
 	}
 
@@ -26,7 +26,7 @@ const HomeContainer = styled.div`
 		margin-bottom: 16px;
 		font-size: 1rem;
 		font-weight: 500;
-		color: #484848;
+		color: #766B93;
 		text-align: center;
 		opacity: 0;
 	}
@@ -39,40 +39,124 @@ const HomeContainer = styled.div`
 
 		a {
 			button {
-				margin: 0 4px;
-				padding: 4px 8px;
-				background: white;
-				border: 1px solid darkgray;
+				margin: 0 8px;
+				padding: 8px 24px;
+				background: #58CAA8;
+				border: 1px solid #58CAA8;
 				border-radius: 3px;
 				outline: none;
 				font-family: 'Quicksand', sans-serif;
-				font-size: 1rem;
+				font-size: 0.875rem;
 				font-weight: 500;
+				color: whitesmoke;
 				cursor: pointer;
-				transition: 0.25s;
+				transition: 0.5s;
 
 				:hover {
-					border: 1px solid #484848;
+					background: #E6EDFC;
+					color: #58CAA8;
 				}
 			}
 		}
 	}
 
 	.icons {
+		display: flex;
 		opacity: 0;
 
 		a {
-			i {
-				margin: 0 0.25rem;
-				font-size: 1.5rem;
-				color: #484848;
-				transition: 0.25s;
-			
+			text-decoration: none;
+
+			.github {
+				height: 48px;
+				width: 48px;
+				margin: 0 4px;
+				border: 1px solid #484848;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: 0.5s;
+
+				i {
+					font-size: 1.5rem;
+					color: #484848;
+					transition: 0.5s;
+				}
+
 				:hover {
-					color: darkgray;
+					background: #484848;
+
+					i {
+						color: whitesmoke;
+					}
+				}
+			}
+
+			.linkedin {
+				height: 48px;
+				width: 48px;
+				margin: 0 4px;
+				border: 1px solid #2867B2;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: 0.5s;
+
+				i {
+					font-size: 1.5rem;
+					color: #2867B2;
+					transition: 0.5s;
+				}
+
+				:hover {
+					background: #2867B2;
+
+					i {
+						color: whitesmoke;
+					}
+				}
+			}
+
+			.mail {
+				height: 48px;
+				width: 48px;
+				margin: 0 4px;
+				border: 1px solid #D44638;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: 0.5s;
+
+				i {
+					font-size: 1.25rem;
+					color: #D44638;
+					transition: 0.5s;
+				}
+
+				:hover {
+					background: #D44638;
+
+					i {
+						color: whitesmoke;
+					}
 				}
 			}
 		}
+	}
+
+	@media (min-width: 375px) {
+		width: 356.25px;
+	}
+
+	@media (min-width: 412px) {
+		width: 391.4px;
+	}
+
+	@media (min-width: 768px) {
+		width: 691.2px;
 	}
 `
 
@@ -116,17 +200,17 @@ const Home = () => {
     return (
         <HomeContainer>
 			<h1 ref={element => {name = element}}>miguel nicolas</h1>
-			<p ref={element => {bio = element}}>Hi! I'm a front end software engineer based in New Jersey. Currently attending Lambda School.</p>
+			<p ref={element => {bio = element}}>Hi! I'm a full stack software engineer passionate about high-quality interfaces and pleasant user experiences. Based in New Jersey. Currently attending Lambda School.</p>
 			<div className='buttons' ref={element => {buttons = element}}>
 				{/* <button>Skills</button> */}
-				<Link to='/projects'><button>Projects</button></Link>
-				<a href='https://drive.google.com/file/d/1UE3d9wdHmqvzTADKTcEqM94HBSp4Zf8z/view?usp=sharing' target='_blank' rel="noopener noreferrer"><button>Resume</button></a>
+				<Link to='/projects'><button>projects</button></Link>
+				<a href='https://drive.google.com/file/d/1UE3d9wdHmqvzTADKTcEqM94HBSp4Zf8z/view?usp=sharing' target='_blank' rel="noopener noreferrer"><button>resume</button></a>
 				{/* <button>Blog</button> */}
 			</div>
 			<div className='icons' ref={element => {icons = element}}>
-				<a href='https://github.com/miugel' target='_blank' rel="noopener noreferrer"><i className="fab fa-github-square"></i></a>
-				<a href='https://www.linkedin.com/in/miguelqnicolas/' target='_blank' rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
-				<a href='mailto:miguelqnicolas@gmail.com' target='_blank' rel="noopener noreferrer"><i className="fas fa-envelope-square"></i></a>
+				<a href='https://github.com/miugel' target='_blank' rel="noopener noreferrer"><div className='github'><i className="fab fa-github"></i></div></a>
+				<a href='https://www.linkedin.com/in/miguelqnicolas/' target='_blank' rel="noopener noreferrer"><div className='linkedin'><i className="fab fa-linkedin-in"></i></div></a>
+				<a href='mailto:miguelqnicolas@gmail.com' target='_blank' rel="noopener noreferrer"><div className='mail'><i className="fas fa-envelope"></i></div></a>
 			</div>
 		</HomeContainer>
     );
