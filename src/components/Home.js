@@ -204,13 +204,14 @@ const Home = () => {
 			<div className='buttons' ref={element => {buttons = element}}>
 				{/* <button>skills</button> */}
 				<Link to='/projects'><button>projects</button></Link>
-				<a href='https://drive.google.com/file/d/1UE3d9wdHmqvzTADKTcEqM94HBSp4Zf8z/view?usp=sharing' target='_blank' rel="noopener noreferrer"><button>resume</button></a>
+				{/* <a href='https://drive.google.com/file/d/1UE3d9wdHmqvzTADKTcEqM94HBSp4Zf8z/view?usp=sharing' target='_blank' rel='noopener noreferrer'><button>resume</button></a> */}
+				<a href='#'><button>resume</button></a>
 				{/* <button>blog</button> */}
 			</div>
 			<div className='icons' ref={element => {icons = element}}>
-				<a href='https://github.com/miugel' target='_blank' rel="noopener noreferrer"><div className='github'><i className="fab fa-github"></i></div></a>
-				<a href='https://www.linkedin.com/in/miguelqnicolas/' target='_blank' rel="noopener noreferrer"><div className='linkedin'><i className="fab fa-linkedin-in"></i></div></a>
-				<a href='mailto:miguelqnicolas@gmail.com' target='_blank' rel="noopener noreferrer"><div className='mail'><i className="fas fa-envelope"></i></div></a>
+				<a href='https://github.com/miugel' target='_blank' rel='noopener noreferrer'><div className='github'><i className='fab fa-github'></i></div></a>
+				<a href='https://www.linkedin.com/in/miguelqnicolas/' target='_blank' rel='noopener noreferrer'><div className='linkedin'><i className='fab fa-linkedin-in'></i></div></a>
+				<a href='mailto:miguelqnicolas@gmail.com' target='_blank' rel='noopener noreferrer'><div className='mail'><i className='fas fa-envelope'></i></div></a>
 			</div>
 		</HomeContainer>
     );
