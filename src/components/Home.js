@@ -131,7 +131,7 @@ const HomeContainer = styled.div`
 				transition: 0.5s;
 
 				i {
-					font-size: 1.25rem;
+					font-size: 1.4rem;
 					color: #D44638;
 					transition: 0.5s;
 				}
@@ -148,11 +148,11 @@ const HomeContainer = styled.div`
 	}
 
 	@media (min-width: 375px) {
-		width: 356.25px;
+		width: 337.5px;
 	}
 
-	@media (min-width: 412px) {
-		width: 391.4px;
+	@media (min-width: 414px) {
+		width: 372.6px;
 	}
 
 	@media (min-width: 768px) {
@@ -202,10 +202,10 @@ const Home = () => {
 			<h1 ref={element => {name = element}}>miguel nicolas</h1>
 			<p ref={element => {bio = element}}>Hi! I'm a full stack software engineer passionate about high-quality interfaces and pleasant user experiences. Based in New Jersey. Currently attending Lambda School.</p>
 			<div className='buttons' ref={element => {buttons = element}}>
-				{/* <button>Skills</button> */}
+				{/* <button>skills</button> */}
 				<Link to='/projects'><button>projects</button></Link>
 				<a href='https://drive.google.com/file/d/1UE3d9wdHmqvzTADKTcEqM94HBSp4Zf8z/view?usp=sharing' target='_blank' rel="noopener noreferrer"><button>resume</button></a>
-				{/* <button>Blog</button> */}
+				{/* <button>blog</button> */}
 			</div>
 			<div className='icons' ref={element => {icons = element}}>
 				<a href='https://github.com/miugel' target='_blank' rel="noopener noreferrer"><div className='github'><i className="fab fa-github"></i></div></a>
