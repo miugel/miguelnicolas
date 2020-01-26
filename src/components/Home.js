@@ -39,8 +39,8 @@ const HomeContainer = styled.div`
 
 		a {
 			button {
-				margin: 0 8px;
-				padding: 8px 24px;
+				margin: 0 4px;
+				padding: 8px 12px;
 				background: #58CAA8;
 				border: 1px solid #58CAA8;
 				border-radius: 3px;
@@ -149,6 +149,14 @@ const HomeContainer = styled.div`
 
 	@media (min-width: 375px) {
 		width: 337.5px;
+
+		.buttons {
+			a {
+				button {
+					padding: 8px 16px;
+				}
+			}
+		}
 	}
 
 	@media (min-width: 414px) {
@@ -157,6 +165,16 @@ const HomeContainer = styled.div`
 
 	@media (min-width: 768px) {
 		width: 691.2px;
+	}
+
+	@media (min-width: 1024px) {
+		.buttons {
+			a {
+				button {
+					padding: 8px 20px;
+				}
+			}
+		}
 	}
 `
 
@@ -202,11 +220,11 @@ const Home = () => {
 			<h1 ref={element => {name = element}}>miguel nicolas</h1>
 			<p ref={element => {bio = element}}>Hi! I'm a full stack software engineer passionate about high-quality interfaces and pleasant user experiences. Based in New Jersey. Currently attending Lambda School.</p>
 			<div className='buttons' ref={element => {buttons = element}}>
-				{/* <button>skills</button> */}
+				{/* <a href='#'><button>skills</button></a> */}
 				<Link to='/projects'><button>projects</button></Link>
 				{/* <a href='https://drive.google.com/file/d/1UE3d9wdHmqvzTADKTcEqM94HBSp4Zf8z/view?usp=sharing' target='_blank' rel='noopener noreferrer'><button>resume</button></a> */}
 				<a href='#'><button>resume</button></a>
-				{/* <button>blog</button> */}
+				{/* <a href='#'><button>blog</button></a> */}
 			</div>
 			<div className='icons' ref={element => {icons = element}}>
 				<a href='https://github.com/miugel' target='_blank' rel='noopener noreferrer'><div className='github'><i className='fab fa-github'></i></div></a>

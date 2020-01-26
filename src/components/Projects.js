@@ -71,10 +71,12 @@ const ProjectsContainer = styled.div`
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
             .project-image {
-                img {
-                    width: 100%;
-                    border-top-left-radius: 3px;
-                    border-top-right-radius: 3px;
+                a {
+                    img {
+                        width: 100%;
+                        border-top-left-radius: 3px;
+                        border-top-right-radius: 3px;
+                    }
                 }
             }
 
@@ -102,7 +104,7 @@ const ProjectsContainer = styled.div`
         
                 button {
                     margin-right: 8px;
-                    padding: 8px 16px;
+                    padding: 8px 20px;
                     background: #58CAA8;
                     border: 1px solid #58CAA8;
                     border-radius: 3px;
@@ -158,7 +160,7 @@ const Projects = () => {
     return (
         <ProjectsContainer>
             <Link className='back-button' to='/'>
-                <i className="fas fa-arrow-left"></i>
+                <i className='fas fa-arrow-left'></i>
                 <p>go back</p>
             </Link>
             <h1>projects</h1>
@@ -167,144 +169,144 @@ const Projects = () => {
 
                 <div className='project'>
                     <div className='project-image'>
-                        <img src={opti} alt='opti'/>
+                    <a href='https://opti.netlify.com/' target='_blank' rel='noopener noreferrer'><img src={opti} alt='opti'/></a>
                     </div>
                     <div className='project-description'>
                         <h2>Opti</h2>
                         <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
                         <p className='description'>A web app that uses historical data to determine the optimal price for an AirBnB listing.</p>
-                        <a href='https://opti.netlify.com/' target='_blank' rel="noopener noreferrer"><button>view project</button></a>
-                        <a href='https://github.com/Build-Week-Airbnb-Optimal-Price-4/Front-End' target='_blank' rel="noopener noreferrer"><button>view source</button></a>
+                        <a href='https://opti.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/Build-Week-Airbnb-Optimal-Price-4/Front-End' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
                 <div className='project'>
                     <div className='project-image'>
-                        <img src={farmfresh} alt='farm fresh'/>
+                        <a href='https://farmfreshapp.netlify.com/' target='_blank' rel='noopener noreferrer'><img src={farmfresh} alt='farm fresh'/></a>
                     </div>
                     <div className='project-description'>
                         <h2>Farm Fresh</h2>
-                        <p className='tech-stack'>React | GreenSock | Node | Express | PostgreSQL</p>
+                        <p className='tech-stack'>React | CSS | GreenSock | Node | Express | PostgreSQL</p>
                         <p className='description'>A web app that connects farmers with a surplus amount of food and their community.</p>
-                        <a href='https://farmfreshapp.netlify.com/' target='_blank' rel="noopener noreferrer"><button>view project</button></a>
-                        <a href='https://github.com/farmFreshProduce/frontEnd' target='_blank' rel="noopener noreferrer"><button>view source</button></a>
+                        <a href='https://farmfreshapp.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/farmFreshProduce/frontEnd' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
                 <div className='project'>
                     <div className='project-image'>
-                        <img src={githubclone} alt='github clone'/>
+                        <a href='https://githubclone.guacdev.com/' target='_blank' rel='noopener noreferrer'><img src={githubclone} alt='github clone'/></a>
                     </div>
                     <div className='project-description'>
                         <h2>GitHub Clone</h2>
                         <p className='tech-stack'>React | styled-components</p>
-                        <p className='description'>A GitHub clone that allows you to search for users.</p>
-                        <a href='https://githubclone.guacdev.com/' target='_blank' rel="noopener noreferrer"><button>view project</button></a>
-                        <a href='https://github.com/miugel/guacDev/tree/githubclone' target='_blank' rel="noopener noreferrer"><button>view source</button></a>
+                        <p className='description'>A GitHub clone that allows you to search for users and see their details.</p>
+                        <a href='https://githubclone.guacdev.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/miugel/guacDev/tree/githubclone' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
                 <div className='project'>
                     <div className='project-image'>
-                        <img src={guacfetch} alt='guacfetch'/>
+                        <a href='https://fetch.guacdev.com/' target='_blank' rel='noopener noreferrer'><img src={guacfetch} alt='guacfetch'/></a>
                     </div>
                     <div className='project-description'>
                         <h2>guacFetch</h2>
                         <p className='tech-stack'>React | styled-components</p>
                         <p className='description'>A Postman clone that allows you to make API requests and view responses.</p>
-                        <a href='https://fetch.guacdev.com/' target='_blank' rel="noopener noreferrer"><button>view project</button></a>
-                        <a href='https://github.com/miugel/guacDev/tree/fetch' target='_blank' rel="noopener noreferrer"><button>view source</button></a>
+                        <a href='https://fetch.guacdev.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/miugel/guacDev/tree/fetch' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
                 <div className='project'>
                     <div className='project-image'>
-                        <img src={numbers} alt='numbers'/>
+                        <a href='https://numbersapp.netlify.com/' target='_blank' rel='noopener noreferrer'><img src={numbers} alt='numbers'/></a>
                     </div>
                     <div className='project-description'>
                         <h2>Numbers</h2>
                         <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
                         <p className='description'>A real estate investment analyzer</p>
-                        <a href='https://numbersapp.netlify.com/' target='_blank' rel="noopener noreferrer"><button>view project</button></a>
-                        <a href='https://github.com/numbersapp/Front-End' target='_blank' rel="noopener noreferrer"><button>view source</button></a>
+                        <a href='https://numbersapp.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/numbersapp/Front-End' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
                 <div className='project'>
                     <div className='project-image'>
-                        <img src={guacmarket} alt='guacmarket'/>
+                        <a href='https://market.guacdev.com/' target='_blank' rel='noopener noreferrer'><img src={guacmarket} alt='guacmarket'/></a>
                     </div>
                     <div className='project-description'>
                         <h2>guacMarket</h2>
                         <p className='tech-stack'>React | styled-components</p>
                         <p className='description'>A stock research application</p>
-                        <a href='https://market.guacdev.com/' target='_blank' rel="noopener noreferrer"><button>view project</button></a>
-                        <a href='https://github.com/miugel/guacDev/tree/market' target='_blank' rel="noopener noreferrer"><button>view source</button></a>
+                        <a href='https://market.guacdev.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/miugel/guacDev/tree/market' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
                 <div className='project'>
                     <div className='project-image'>
-                        <img src={netflixclone} alt='netflix clone'/>
+                        <a href='https://netflixclone.guacdev.com/' target='_blank' rel='noopener noreferrer'><img src={netflixclone} alt='netflix clone'/></a>
                     </div>
                     <div className='project-description'>
                         <h2>Netflix Clone</h2>
                         <p className='tech-stack'>React | styled-components | Node | Express</p>
                         <p className='description'>A Netflix clone that allows you to perform CRUD operations.</p>
-                        <a href='https://netflixclone.guacdev.com/' target='_blank' rel="noopener noreferrer"><button>view project</button></a>
-                        <a href='https://github.com/miugel/guacDev/tree/netflixclone' target='_blank' rel="noopener noreferrer"><button>view source</button></a>
+                        <a href='https://netflixclone.guacdev.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/miugel/guacDev/tree/netflixclone' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
                 <div className='project'>
                     <div className='project-image'>
-                        <img src={whenwilliretire} alt='when will i retire?'/>
+                        <a href='https://whenwilliretire.tech/' target='_blank' rel='noopener noreferrer'><img src={whenwilliretire} alt='when will i retire?'/></a>
                     </div>
                     <div className='project-description'>
                         <h2>When Will I Retire?</h2>
                         <p className='tech-stack'>HTML | CSS | JavaScript</p>
                         <p className='description'>A retirement advisor that estimates your retirement date based on your current habits.</p>
-                        <a href='https://whenwilliretire.tech/' target='_blank' rel="noopener noreferrer"><button>view project</button></a>
-                        <a href='https://github.com/miugel/When-Will-I-Retire' target='_blank' rel="noopener noreferrer"><button>view source</button></a>
+                        <a href='https://whenwilliretire.tech/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/miugel/When-Will-I-Retire' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
                 <div className='project'>
                     <div className='project-image'>
-                        <img src={split} alt='split'/>
+                        <a href='https://splitapp.netlify.com/' target='_blank' rel='noopener noreferrer'><img src={split} alt='split'/></a>
                     </div>
                     <div className='project-description'>
                         <h2>Split</h2>
                         <p className='tech-stack'>HTML | CSS</p>
                         <p className='description'>A bill-splitting app</p>
-                        <a href='https://splitapp.netlify.com/' target='_blank' rel="noopener noreferrer"><button>view project</button></a>
-                        <a href='https://github.com/build-sprint-split-the-bill/ui-interface-miguel' target='_blank' rel="noopener noreferrer"><button>view source</button></a>
+                        <a href='https://splitapp.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/build-sprint-split-the-bill/ui-interface-miguel' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
                 <div className='project'>
                     <div className='project-image'>
-                        <img src={yodebt} alt='yodebt'/>
+                        <a href='https://yodebt.tech/' target='_blank' rel='noopener noreferrer'><img src={yodebt} alt='yodebt'/></a>
                     </div>
                     <div className='project-description'>
                         <h2>YoDebt</h2>
                         <p className='tech-stack'>HTML | CSS | Java | DialogFlow</p>
                         <p className='description'>A student loan assistant</p>
-                        <a href='https://yodebt.tech/' target='_blank' rel="noopener noreferrer"><button>view project</button></a>
-                        <a href='https://github.com/miugel/YoDebt' target='_blank' rel="noopener noreferrer"><button>view source</button></a>
+                        <a href='https://yodebt.tech/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/miugel/YoDebt' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
                 <div className='project'>
                     <div className='project-image'>
-                        <img src={miguelnicolas} alt='miguelnicolas'/>
+                        <Link to='/'><img src={miguelnicolas} alt='miguelnicolas'/></Link>
                     </div>
                     <div className='project-description'>
                         <h2>miguelnicolas.dev</h2>
                         <p className='tech-stack'>React | styled-components | GreenSock</p>
                         <p className='description'>My personal website</p>
                         <Link to='/'><button>view project</button></Link>
-                        <a href='https://github.com/miugel/miguelnicolas.dev' target='_blank' rel="noopener noreferrer"><button>view source</button></a>
+                        <a href='https://github.com/miugel/miguelnicolas.dev' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
