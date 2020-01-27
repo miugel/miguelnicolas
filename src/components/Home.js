@@ -218,11 +218,11 @@ const Home = () => {
     return (
         <HomeContainer>
 			<h1 ref={element => {name = element}}>miguel nicolas</h1>
-			<p ref={element => {bio = element}}>Hi! I'm a full stack software engineer passionate about high-quality interfaces and pleasant user experiences. Based in New Jersey. Currently attending Lambda School.</p>
+			<p ref={element => {bio = element}}>Hi! I'm a full stack software engineer passionate about high-quality interfaces and pleasant user experiences. Based in New Jersey.</p>
 			<div className='buttons' ref={element => {buttons = element}}>
 				{/* <a href='#'><button>skills</button></a> */}
 				<Link to='/projects'><button>projects</button></Link>
-				<a href='https://drive.google.com/open?id=1d69tg27DUZ_DaBaX1nxK4Z-HjwfvHesd' target='_blank' rel='noopener noreferrer'><button>resume</button></a>
+				<a href='https://drive.google.com/open?id=1jNXpMUwWukIg-Lo0ZzmFsKD37u5AiXOy' target='_blank' rel='noopener noreferrer'><button>resume</button></a>
 				{/* <a href='#'><button>blog</button></a> */}
 			</div>
 			<div className='icons' ref={element => {icons = element}}>
