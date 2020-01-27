@@ -222,7 +222,7 @@ const Home = () => {
 			<div className='buttons' ref={element => {buttons = element}}>
 				{/* <a href='#'><button>skills</button></a> */}
 				<Link to='/projects'><button>projects</button></Link>
-				<a href='https://drive.google.com/open?id=1jNXpMUwWukIg-Lo0ZzmFsKD37u5AiXOy' target='_blank' rel='noopener noreferrer'><button>resume</button></a>
+				<a href='https://drive.google.com/open?id=1WFbYOtAdXCVpceKfEr9jy-tQyqflldGh' target='_blank' rel='noopener noreferrer'><button>resume</button></a>
 				{/* <a href='#'><button>blog</button></a> */}
 			</div>
 			<div className='icons' ref={element => {icons = element}}>
