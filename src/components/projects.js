@@ -65,7 +65,7 @@ const Projects = props => {
                         <h2>bestBud</h2>
                         <p className='role'>Role: Full stack</p>
                         <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
-                        <p className='description'>A web app educates new medical cannabis consumers and allows them to find the right strain as a means to battle medical conditions and ailments.</p>
+                        <p className='description'>A web app that educates new medical cannabis consumers and allows them to find the right strain as a means to battle medical conditions and ailments.</p>
                         <a href='https://bestbudapp.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/Med-Cabinet-BW' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
