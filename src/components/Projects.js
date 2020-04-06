@@ -1,178 +1,81 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import styled from 'styled-components';
-import opti from '../img/opti.jpg';
-import farmfresh from '../img/farmfresh.jpg';
-import githubclone from '../img/githubclone.jpg';
-import guacfetch from '../img/guacfetch.jpg';
-import numbers from '../img/numbers.jpg';
-import guacmarket from '../img/guacmarket.jpg';
-import netflixclone from '../img/netflixclone.jpg';
-import whenwilliretire from '../img/whenwilliretire.jpg';
-import split from '../img/split.jpg';
-import yodebt from '../img/yodebt.jpg';
-import miguelnicolas from '../img/miguelnicolas.jpg';
+import { Link } from 'react-router-dom';
+import ProjectsContainer from './styles/projectsStyle';
 
-const ProjectsContainer = styled.div`
-    width: 304px;
-    margin: 0 auto;
-    margin-top: 64px;
-    margin-bottom: 64px;
-
-    .back-button {
-        margin-bottom: 16px;
-        text-decoration: none;
-        color: black;
-        display: flex;
-        align-items: center;
-
-        i {
-            margin-left: 8px;
-            font-size: 1rem;
-            color: #38416F;
-            transition: 0.5s;
-        }
-
-        p {
-            margin-left: 4px;
-            font-size: 1rem;
-            font-weight: 500;
-            color: #38416F;
-            transition: 0.5s;
-        }
-
-        :hover {
-            i {
-                margin-left: 0;
-            }
-
-            p {
-                margin-left: 12px;
-            }
-        }
-    }
-
-    h1 {
-        margin-bottom: 32px;
-        font-size: 2rem;
-        font-weight: 700;
-        color: #38416F;
-        text-align: center;
-    }
-
-    .project-container {
-        width: 100%;
-
-        .project {
-            width: 100%;
-            margin-bottom: 32px;
-            background: white;
-            border-radius: 3px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-            .project-image {
-                a {
-                    img {
-                        width: 100%;
-                        border-top-left-radius: 3px;
-                        border-top-right-radius: 3px;
-                    }
-                }
-            }
-
-            .project-description {
-                padding: 16px;
-
-                h2 {
-                    font-size: 1.5rem;
-                    font-weight: 700;
-                    color: #38416F;
-                }
-        
-                .tech-stack {
-                    font-size: 0.875rem;
-                    font-weight: 500;
-                    color: #766B93;
-                }
-        
-                .description {
-                    margin-bottom: 8px;
-                    font-size: 1rem;
-                    font-weight: 500;
-                    color: #766B93;
-                }
-        
-                button {
-                    margin-right: 8px;
-                    padding: 8px 20px;
-                    background: #58CAA8;
-                    border: 1px solid #58CAA8;
-                    border-radius: 3px;
-                    outline: none;
-                    font-family: 'Quicksand', sans-serif;
-                    font-size: 0.875rem;
-                    font-weight: 500;
-                    color: whitesmoke;
-                    cursor: pointer;
-                    transition: 0.5s;
-        
-                    :hover {
-                        background: white;
-                        color: #58CAA8;
-                    }
-                }
-            }
-        }
-    }
-
-    @media (min-width: 375px) {
-		width: 337.5px;
-    }
-    
-    @media (min-width: 414px) {
-		width: 372.6px;
-    }
-    
-    @media (min-width: 522px) {
-        width: 470.4px;
-    }
-
-    @media (min-width: 1024px) {
-        width: 921.6px;
-
-        .project-container {
-            display: flex;
-            flex-wrap: wrap;
-            
-            .project {
-                width: 444.8px;
-                margin-right: 32px;
-            }
-
-            .project:nth-child(2n) {
-                margin-right: 0;
-            }
-        }
-    }
-`
-
-const Projects = () => {
+const Projects = props => {
     return (
         <ProjectsContainer>
-            <Link className='back-button' to='/'>
-                <i className='fas fa-arrow-left'></i>
-                <p>go back</p>
-            </Link>
-            <h1>projects</h1>
+            <button className='back' onClick={() => props.history.push('/')}><i className='fas fa-chevron-left'></i>go back</button>
+
+            <h1>notable projects</h1>
 
             <div className='project-container'>
 
                 <div className='project'>
-                    <div className='project-image'>
-                    <a href='https://opti.netlify.com/' target='_blank' rel='noopener noreferrer'><img src={opti} alt='opti'/></a>
+                    <a href='https://readrr.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
+                    <div className='project-description'>
+                        <h2>Readrr</h2>
+                        <p className='role'>Role: Full stack</p>
+                        <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL | AWS</p>
+                        <p className='description'>A platform that allows readers to search its database of books and manage their own library.</p>
+                        <a href='https://readrr.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/Lambda-School-Labs/betterreads-fe' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
+                </div>
+
+                <div className='project'>
+                    <a href='https://viewee.netlify.com/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
+                    <div className='project-description'>
+                        <h2>viewee</h2>
+                        <p className='role'>Role: Full stack</p>
+                        <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
+                        <p className='description'>A web app that allows students to view, answer, and post tech job interview questions.</p>
+                        <a href='https://viewee.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/viewee' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                    </div>
+                </div>
+
+                <div className='project'>
+                    <a href='https://apiarykeyboards.netlify.com/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
+                    <div className='project-description'>
+                        <h2>Apiary Keyboards</h2>
+                        <p className='role'>Role: Front end</p>
+                        <p className='tech-stack'>React | styled-components | Stripe</p>
+                        <p className='description'>An ecommerce website built for a small business that builds custom keyboards.</p>
+                        <a href='https://apiarykeyboards.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/miugel/apiarykeyboards' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                    </div>
+                </div>
+
+                <div className='project'>
+                    <a href='https://njcovid.now.sh/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
+                    <div className='project-description'>
+                        <h2>NJCovid</h2>
+                        <p className='role'>Role: Front end</p>
+                        <p className='tech-stack'>React | styled-components</p>
+                        <p className='description'>A website that provides information about the Coronavirus to New Jersey residents.</p>
+                        <a href='https://njcovid.now.sh/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/miugel/njcovid' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                    </div>
+                </div>
+
+                <div className='project'>
+                    <a href='https://bestbudapp.netlify.com/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
+                    <div className='project-description'>
+                        <h2>bestBud</h2>
+                        <p className='role'>Role: Full stack</p>
+                        <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
+                        <p className='description'>A web app educates new medical cannabis consumers and allows them to find the right strain as a means to battle medical conditions and ailments.</p>
+                        <a href='https://bestbudapp.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/Med-Cabinet-BW' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                    </div>
+                </div>
+
+                <div className='project'>
+                    <a href='https://opti.netlify.com/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>Opti</h2>
+                        <p className='role'>Role: Front end</p>
                         <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
                         <p className='description'>A web app that uses historical data to determine the optimal price for an AirBnB listing.</p>
                         <a href='https://opti.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
@@ -181,6 +84,30 @@ const Projects = () => {
                 </div>
 
                 <div className='project'>
+                    <a href='https://githubclone.guacdev.com/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
+                    <div className='project-description'>
+                        <h2>GitHub Clone</h2>
+                        <p className='role'>Role: Front end</p>
+                        <p className='tech-stack'>React | styled-components</p>
+                        <p className='description'>A GitHub clone that allows you to search for users and see their details.</p>
+                        <a href='https://githubclone.guacdev.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/miugel/guacDev/tree/githubclone' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                    </div>
+                </div>
+
+                <div className='project'>
+                    <Link to='/'><div className='project-image'></div></Link>
+                    <div className='project-description'>
+                        <h2>miguelnicolas.dev</h2>
+                        <p className='role'>Role: Front end</p>
+                        <p className='tech-stack'>React | styled-components | GreenSock</p>
+                        <p className='description'>My personal website</p>
+                        <Link to='/'><button>view project</button></Link>
+                        <a href='https://github.com/miugel/miguelnicolas.dev' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                    </div>
+                </div>
+
+                {/* <div className='project'>
                     <div className='project-image'>
                         <a href='https://farmfreshapp.netlify.com/' target='_blank' rel='noopener noreferrer'><img src={farmfresh} alt='farm fresh'/></a>
                     </div>
@@ -190,19 +117,6 @@ const Projects = () => {
                         <p className='description'>A web app that connects farmers with a surplus amount of food and their community.</p>
                         <a href='https://farmfreshapp.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/farmFreshProduce/frontEnd' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
-                    </div>
-                </div>
-
-                <div className='project'>
-                    <div className='project-image'>
-                        <a href='https://githubclone.guacdev.com/' target='_blank' rel='noopener noreferrer'><img src={githubclone} alt='github clone'/></a>
-                    </div>
-                    <div className='project-description'>
-                        <h2>GitHub Clone</h2>
-                        <p className='tech-stack'>React | styled-components</p>
-                        <p className='description'>A GitHub clone that allows you to search for users and see their details.</p>
-                        <a href='https://githubclone.guacdev.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
-                        <a href='https://github.com/miugel/guacDev/tree/githubclone' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
@@ -295,22 +209,11 @@ const Projects = () => {
                         <a href='https://yodebt.tech/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/miugel/YoDebt' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
-                </div>
-
-                <div className='project'>
-                    <div className='project-image'>
-                        <Link to='/'><img src={miguelnicolas} alt='miguelnicolas'/></Link>
-                    </div>
-                    <div className='project-description'>
-                        <h2>miguelnicolas.dev</h2>
-                        <p className='tech-stack'>React | styled-components | GreenSock</p>
-                        <p className='description'>My personal website</p>
-                        <Link to='/'><button>view project</button></Link>
-                        <a href='https://github.com/miugel/miguelnicolas.dev' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
-                    </div>
-                </div>
+                </div> */}
 
             </div>
+
+            <a href='https://github.com/miugel' target='_blank' rel='noopener noreferrer' className='checkout'><p>Checkout my other projects on GitHub!<i className='fas fa-chevron-right'></i></p></a>
         </ProjectsContainer>
     );
 };
