@@ -45,9 +45,9 @@ const Home = () => {
     return (
         <HomeContainer>
 			<h1 ref={element => {name = element}}>miguel nicolas</h1>
-			<p ref={element => {bio = element}}>Hi! I'm a full stack software engineer passionate about high-quality interfaces and pleasant user experiences. Based in New Jersey.</p>
+			<p ref={element => {bio = element}}>Hi! I'm a full stack software engineer based in New Jersey passionate about high-quality interfaces and pleasant user experiences.</p>
 			<div className='buttons' ref={element => {buttons = element}}>
-				<Link to='/skills'><button>skills</button></Link>
+				{/* <Link to='/skills'><button>skills</button></Link> */}
 				<Link to='/projects'><button>projects</button></Link>
 				<a href='https://drive.google.com/open?id=1WFbYOtAdXCVpceKfEr9jy-tQyqflldGh' target='_blank' rel='noopener noreferrer'><button>resume</button></a>
 			</div>
