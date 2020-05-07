@@ -152,7 +152,7 @@ const ProjectsContainer = styled.div`
             }
         }
 
-        .project:nth-child(3) {
+        .project:nth-child(4) {
             .project-image {
                 background: url(${apiarykeyboards1});
                 background-size: cover;
@@ -164,14 +164,14 @@ const ProjectsContainer = styled.div`
             }
         }
 
-        .project:nth-child(4) {
+        .project:nth-child(5) {
             .project-image {
                 background: url(${njcovid1});
                 background-size: cover;
             }
         }
 
-        .project:nth-child(5) {
+        .project:nth-child(6) {
             .project-image {
                 background: url(${bestbud1});
                 background-size: cover;
@@ -183,7 +183,7 @@ const ProjectsContainer = styled.div`
             }
         }
 
-        .project:nth-child(6) {
+        .project:nth-child(7) {
             .project-image {
                 background: url(${opti1});
                 background-size: cover;
@@ -195,14 +195,14 @@ const ProjectsContainer = styled.div`
             }
         }
 
-        .project:nth-child(7) {
+        .project:nth-child(8) {
             .project-image {
                 background: url(${githubclone1});
                 background-size: cover;
             }
         }
 
-        .project:nth-child(8) {
+        .project:nth-child(9) {
             .project-image {
                 background: url(${miguelnicolas1});
                 background-size: cover;
@@ -210,27 +210,33 @@ const ProjectsContainer = styled.div`
         }
     }
 
-    .checkout {
-        text-decoration: none;
+    .checkout-container {
+        display: flex;
+        justify-content: center;
 
-        p {
-            width: 95%;
-            font-size: 1rem;
-            font-weight: 600;
-            color: #38416f;
-            text-align: center;
-            cursor: pointer;
-
-            i {
-                margin: 0 4px;
-                font-size: 0.875rem;
-                transition: 0.5s;
-            }
-
-            :hover {
+        .checkout {
+            text-decoration: none;
+    
+            button {
+                background: none;
+                border: none;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 1rem;
+                font-weight: 600;
+                color: #38416f;
+                cursor: pointer;
+    
                 i {
-                    margin-left: 8px;
-                    margin-right: 0;
+                    margin: 0 4px;
+                    font-size: 0.75rem;
+                    transition: 0.25s;
+                }
+    
+                :hover {
+                    i {
+                        margin-left: 8px;
+                        margin-right: 0;
+                    }
                 }
             }
         }
