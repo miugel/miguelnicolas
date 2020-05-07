@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './components/home';
 import Projects from './components/projects';
-import Skills from './components/skills';
+// import Skills from './components/skills';
 import PageNotFound from './components/pageNotFound';
 
 const App = () => {

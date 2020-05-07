@@ -24,8 +24,6 @@ const ProjectsContainer = styled.div`
         margin-bottom: 16px;
         background: none;
         border: none;
-        display: flex;
-        align-items: center;
         font-family: 'Quicksand', sans-serif;
         font-size: 1rem;
         font-weight: 600;
@@ -34,8 +32,8 @@ const ProjectsContainer = styled.div`
 
         i {
             margin: 0 4px;
-            font-size: 0.875rem;
-            transition: 0.5s;
+            font-size: 0.75rem;
+            transition: 0.25s;
         }
 
         :hover {

@@ -5,7 +5,7 @@ import ProjectsContainer from './styles/projectsStyle';
 const Projects = props => {
     return (
         <ProjectsContainer>
-            <button className='back' onClick={() => props.history.push('/')}><i className='fas fa-chevron-left'></i>go back</button>
+            <button className='back' onClick={() => props.history.push('/')}><i className='fas fa-chevron-left'></i>back</button>
 
             <h1>notable projects</h1>
 
