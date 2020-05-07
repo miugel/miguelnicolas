@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import viewee1 from '../../img/viewee1.JPG';
+import loothunters1 from '../../img/loothunters1.JPG';
+import loothunters2 from '../../img/loothunters2.JPG';
 import readrr1 from '../../img/readrr1.JPG';
 import readrr2 from '../../img/readrr2.JPG';
-import viewee1 from '../../img/viewee1.JPG';
 import apiarykeyboards1 from '../../img/apiarykeyboards1.JPG';
 import apiarykeyboards2 from '../../img/apiarykeyboards2.JPG';
 import njcovid1 from '../../img/njcovid1.JPG';
@@ -121,6 +123,25 @@ const ProjectsContainer = styled.div`
 
         .project:nth-child(1) {
             .project-image {
+                background: url(${viewee1});
+                background-size: cover;
+            }
+        }
+
+        .project:nth-child(2) {
+            .project-image {
+                background: url(${loothunters1});
+                background-size: cover;
+            
+                :hover {
+                    background: url(${loothunters2});
+                    background-size: cover;
+                }
+            }
+        }
+
+        .project:nth-child(3) {
+            .project-image {
                 background: url(${readrr1});
                 background-size: cover;
             
@@ -128,13 +149,6 @@ const ProjectsContainer = styled.div`
                     background: url(${readrr2});
                     background-size: cover;
                 }
-            }
-        }
-
-        .project:nth-child(2) {
-            .project-image {
-                background: url(${viewee1});
-                background-size: cover;
             }
         }
 

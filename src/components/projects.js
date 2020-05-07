@@ -11,6 +11,30 @@ const Projects = props => {
 
             <div className='project-container'>
 
+            <div className='project'>
+                    <a href='https://viewee.netlify.com/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
+                    <div className='project-description'>
+                        <h2>viewee</h2>
+                        <p className='role'>Role: Full stack</p>
+                        <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
+                        <p className='description'>A web app that allows students to view, answer, and post tech job interview questions.</p>
+                        <a href='https://viewee.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/viewee' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                    </div>
+                </div>
+
+                <div className='project'>
+                    <a href='https://loothunters.now.sh/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
+                    <div className='project-description'>
+                        <h2>Loot Hunters 3</h2>
+                        <p className='role'>Role: Full stack</p>
+                        <p className='tech-stack'>React | styled-components | Python | Django | PostgreSQL</p>
+                        <p className='description'>An adventure game with procedurally generated rooms.</p>
+                        <a href='https://loothunters.now.sh/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/loothunters3' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                    </div>
+                </div>
+
                 <div className='project'>
                     <a href='https://readrr.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
@@ -20,18 +44,6 @@ const Projects = props => {
                         <p className='description'>A platform that allows readers to search its database of books and manage their own library.</p>
                         <a href='https://readrr.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/Lambda-School-Labs/betterreads-fe' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
-                    </div>
-                </div>
-
-                <div className='project'>
-                    <a href='https://viewee.netlify.com/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
-                    <div className='project-description'>
-                        <h2>viewee</h2>
-                        <p className='role'>Role: Full stack</p>
-                        <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
-                        <p className='description'>A web app that allows students to view, answer, and post tech job interview questions.</p>
-                        <a href='https://viewee.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
-                        <a href='https://github.com/viewee' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
