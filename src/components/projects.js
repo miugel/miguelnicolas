@@ -12,25 +12,25 @@ const Projects = props => {
             <div className='project-container'>
 
             <div className='project'>
-                    <a href='https://viewee.netlify.com/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
+                    <a href='https://viewee.netlify.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>viewee</h2>
                         <p className='role'>Role: Full stack</p>
                         <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
-                        <p className='description'>A web app that allows students to view, answer, and post tech job interview questions.</p>
-                        <a href='https://viewee.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <p className='description'>A web app that allows students to view, answer, and post tech job interview questions</p>
+                        <a href='https://viewee.netlify.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/viewee' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
                 <div className='project'>
-                    <a href='https://loothunters.now.sh/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
+                    <a href='https://loothunters.netlify.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>Loot Hunters 3</h2>
                         <p className='role'>Role: Full stack</p>
                         <p className='tech-stack'>React | styled-components | Python | Django | PostgreSQL</p>
-                        <p className='description'>An adventure game with procedurally generated rooms.</p>
-                        <a href='https://loothunters.now.sh/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <p className='description'>An adventure game with an infinite amount of rooms to wander</p>
+                        <a href='https://loothunters.netlify.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/loothunters3' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
@@ -41,20 +41,20 @@ const Projects = props => {
                         <h2>Readrr</h2>
                         <p className='role'>Role: Full stack</p>
                         <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL | AWS</p>
-                        <p className='description'>A platform that allows readers to search its database of books and manage their own library.</p>
+                        <p className='description'>A platform that allows readers to search its database of books and manage their own library</p>
                         <a href='https://readrr.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/Lambda-School-Labs/betterreads-fe' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
                 <div className='project'>
-                    <a href='https://apiarykeyboards.netlify.com/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
+                    <a href='https://apiarykeyboards.now.sh/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>Apiary Keyboards</h2>
                         <p className='role'>Role: Front end</p>
                         <p className='tech-stack'>React | styled-components | Stripe</p>
-                        <p className='description'>An ecommerce website built for a small business that builds custom keyboards.</p>
-                        <a href='https://apiarykeyboards.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <p className='description'>An ecommerce website built for a small business that builds custom keyboards</p>
+                        <a href='https://apiarykeyboards.now.sh/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/miugel/apiarykeyboards' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
@@ -65,45 +65,45 @@ const Projects = props => {
                         <h2>NJCovid</h2>
                         <p className='role'>Role: Front end</p>
                         <p className='tech-stack'>React | styled-components</p>
-                        <p className='description'>A website that provides information about the Coronavirus to New Jersey residents.</p>
+                        <p className='description'>A website that provides information about the Coronavirus to New Jersey residents</p>
                         <a href='https://njcovid.now.sh/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/miugel/njcovid' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
                 <div className='project'>
-                    <a href='https://bestbudapp.netlify.com/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
+                    <a href='https://bestbudapp.netlify.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>bestBud</h2>
                         <p className='role'>Role: Full stack</p>
                         <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
-                        <p className='description'>A web app that educates new medical cannabis consumers and allows them to find the right strain as a means to battle medical conditions and ailments.</p>
-                        <a href='https://bestbudapp.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <p className='description'>A web app that educates new medical cannabis consumers and allows them to find the right strain as a means to battle medical conditions and ailments</p>
+                        <a href='https://bestbudapp.netlify.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/Med-Cabinet-BW' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
                 <div className='project'>
-                    <a href='https://opti.netlify.com/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
+                    <a href='https://opti.netlify.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>Opti</h2>
                         <p className='role'>Role: Front end</p>
                         <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
-                        <p className='description'>A web app that uses historical data to determine the optimal price for an AirBnB listing.</p>
-                        <a href='https://opti.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <p className='description'>A web app that uses historical data to determine the optimal price for an AirBnB listing</p>
+                        <a href='https://opti.netlify.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/Build-Week-Airbnb-Optimal-Price-4/Front-End' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
                 <div className='project'>
-                    <a href='https://githubclone.guacdev.com/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
+                    <a href='https://githubclone.now.sh/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>GitHub Clone</h2>
                         <p className='role'>Role: Front end</p>
                         <p className='tech-stack'>React | styled-components</p>
-                        <p className='description'>A GitHub clone that allows you to search for users and see their details.</p>
-                        <a href='https://githubclone.guacdev.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
-                        <a href='https://github.com/miugel/guacDev/tree/githubclone' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                        <p className='description'>A GitHub clone that allows you to search for users and see their details</p>
+                        <a href='https://githubclone.now.sh/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/miugel/githubclone' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
@@ -115,7 +115,7 @@ const Projects = props => {
                         <p className='tech-stack'>React | styled-components | GreenSock</p>
                         <p className='description'>My personal website</p>
                         <Link to='/'><button>view project</button></Link>
-                        <a href='https://github.com/miugel/miguelnicolas.dev' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                        <a href='https://github.com/miugel/miguelnicolas' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
