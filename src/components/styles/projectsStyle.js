@@ -119,26 +119,14 @@ const ProjectsContainer = styled.div`
             }
         }
 
+        // .project:nth-child(1) {
+        //     .project-image {
+        //         background: url();
+        //         background-size: cover;
+        //     }
+        // }
+
         .project:nth-child(1) {
-            .project-image {
-                background: url(${viewee1});
-                background-size: cover;
-            }
-        }
-
-        .project:nth-child(2) {
-            .project-image {
-                background: url(${loothunters1});
-                background-size: cover;
-            
-                :hover {
-                    background: url(${loothunters2});
-                    background-size: cover;
-                }
-            }
-        }
-
-        .project:nth-child(3) {
             .project-image {
                 background: url(${readrr1});
                 background-size: cover;
@@ -150,7 +138,7 @@ const ProjectsContainer = styled.div`
             }
         }
 
-        .project:nth-child(4) {
+        .project:nth-child(2) {
             .project-image {
                 background: url(${apiarykeyboards1});
                 background-size: cover;
@@ -162,14 +150,26 @@ const ProjectsContainer = styled.div`
             }
         }
 
-        .project:nth-child(5) {
+        .project:nth-child(3) {
+            .project-image {
+                background: url(${loothunters1});
+                background-size: cover;
+            
+                :hover {
+                    background: url(${loothunters2});
+                    background-size: cover;
+                }
+            }
+        }
+
+        .project:nth-child(4) {
             .project-image {
                 background: url(${njcovid1});
                 background-size: cover;
             }
         }
 
-        .project:nth-child(6) {
+        .project:nth-child(5) {
             .project-image {
                 background: url(${bestbud1});
                 background-size: cover;
@@ -181,7 +181,7 @@ const ProjectsContainer = styled.div`
             }
         }
 
-        .project:nth-child(7) {
+        .project:nth-child(6) {
             .project-image {
                 background: url(${opti1});
                 background-size: cover;
@@ -193,14 +193,14 @@ const ProjectsContainer = styled.div`
             }
         }
 
-        .project:nth-child(8) {
+        .project:nth-child(7) {
             .project-image {
                 background: url(${githubclone1});
                 background-size: cover;
             }
         }
 
-        .project:nth-child(9) {
+        .project:nth-child(8) {
             .project-image {
                 background: url(${miguelnicolas1});
                 background-size: cover;

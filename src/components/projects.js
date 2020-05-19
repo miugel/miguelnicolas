@@ -11,7 +11,7 @@ const Projects = props => {
 
             <div className='project-container'>
 
-            <div className='project'>
+                {/* <div className='project'>
                     <a href='https://viewee.netlify.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>viewee</h2>
@@ -21,19 +21,7 @@ const Projects = props => {
                         <a href='https://viewee.netlify.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/viewee' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
-                </div>
-
-                <div className='project'>
-                    <a href='https://loothunters.netlify.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
-                    <div className='project-description'>
-                        <h2>Loot Hunters 3</h2>
-                        <p className='role'>Role: Full stack</p>
-                        <p className='tech-stack'>React | styled-components | Python | Django | PostgreSQL</p>
-                        <p className='description'>An adventure game with an infinite amount of rooms to wander</p>
-                        <a href='https://loothunters.netlify.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
-                        <a href='https://github.com/loothunters3' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
-                    </div>
-                </div>
+                </div> */}
 
                 <div className='project'>
                     <a href='https://readrr.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
@@ -56,6 +44,18 @@ const Projects = props => {
                         <p className='description'>An ecommerce website built for a small business that builds custom keyboards</p>
                         <a href='https://apiarykeyboards.now.sh/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/miugel/apiarykeyboards' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                    </div>
+                </div>
+
+                <div className='project'>
+                    <a href='https://loothunters.netlify.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
+                    <div className='project-description'>
+                        <h2>Loot Hunters 3</h2>
+                        <p className='role'>Role: Full stack</p>
+                        <p className='tech-stack'>React | styled-components | Python | Django | PostgreSQL</p>
+                        <p className='description'>An adventure game with an infinite amount of rooms to wander</p>
+                        <a href='https://loothunters.netlify.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
+                        <a href='https://github.com/loothunters3' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
