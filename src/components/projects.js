@@ -27,7 +27,7 @@ const Projects = props => {
                     <a href='https://readrr.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>Readrr</h2>
-                        <p className='role'>Role: Full stack</p>
+                        <p className='role'>Role: Fullstack</p>
                         <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL | AWS</p>
                         <p className='description'>A platform that allows readers to search its database of books and manage their own library</p>
                         <a href='https://readrr.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
@@ -39,7 +39,7 @@ const Projects = props => {
                     <a href='https://apiarykeyboards.now.sh/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>Apiary Keyboards</h2>
-                        <p className='role'>Role: Front end</p>
+                        <p className='role'>Role: Frontend</p>
                         <p className='tech-stack'>React | styled-components | Stripe</p>
                         <p className='description'>An ecommerce website built for a small business that builds custom keyboards</p>
                         <a href='https://apiarykeyboards.now.sh/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
@@ -51,7 +51,7 @@ const Projects = props => {
                     <a href='https://loothunters.netlify.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>Loot Hunters 3</h2>
-                        <p className='role'>Role: Full stack</p>
+                        <p className='role'>Role: Fullstack</p>
                         <p className='tech-stack'>React | styled-components | Python | Django | PostgreSQL</p>
                         <p className='description'>An adventure game with an infinite amount of rooms to wander</p>
                         <a href='https://loothunters.netlify.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
@@ -63,7 +63,7 @@ const Projects = props => {
                     <a href='https://njcovid.now.sh/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>NJCovid</h2>
-                        <p className='role'>Role: Front end</p>
+                        <p className='role'>Role: Frontend</p>
                         <p className='tech-stack'>React | styled-components</p>
                         <p className='description'>A website that provides information about the Coronavirus to New Jersey residents</p>
                         <a href='https://njcovid.now.sh/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
@@ -75,7 +75,7 @@ const Projects = props => {
                     <a href='https://bestbudapp.netlify.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>bestBud</h2>
-                        <p className='role'>Role: Full stack</p>
+                        <p className='role'>Role: Fullstack</p>
                         <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
                         <p className='description'>A web app that educates new medical cannabis consumers and allows them to find the right strain as a means to battle medical conditions and ailments</p>
                         <a href='https://bestbudapp.netlify.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
@@ -87,7 +87,7 @@ const Projects = props => {
                     <a href='https://opti.netlify.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>Opti</h2>
-                        <p className='role'>Role: Front end</p>
+                        <p className='role'>Role: Frontend</p>
                         <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
                         <p className='description'>A web app that uses historical data to determine the optimal price for an AirBnB listing</p>
                         <a href='https://opti.netlify.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
@@ -99,7 +99,7 @@ const Projects = props => {
                     <a href='https://githubclone.now.sh/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>GitHub Clone</h2>
-                        <p className='role'>Role: Front end</p>
+                        <p className='role'>Role: Frontend</p>
                         <p className='tech-stack'>React | styled-components</p>
                         <p className='description'>A GitHub clone that allows you to search for users and see their details</p>
                         <a href='https://githubclone.now.sh/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
@@ -111,7 +111,7 @@ const Projects = props => {
                     <Link to='/'><div className='project-image'></div></Link>
                     <div className='project-description'>
                         <h2>miguelnicolas.dev</h2>
-                        <p className='role'>Role: Front end</p>
+                        <p className='role'>Role: Frontend</p>
                         <p className='tech-stack'>React | styled-components | GreenSock</p>
                         <p className='description'>My personal website</p>
                         <Link to='/'><button>view project</button></Link>
