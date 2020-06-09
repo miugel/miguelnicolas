@@ -226,7 +226,7 @@ const Projects = props => {
             </div>
 
             <div className='checkout-container'>
-                <a href='https://github.com/miugel' target='_blank' rel='noopener noreferrer' className='checkout'><button>Checkout my other projects on GitHub!<i className='fas fa-chevron-right'></i></button></a>
+                <a href='https://github.com/miugel' target='_blank' rel='noopener noreferrer' className='checkout'><button>Check out my other projects on GitHub!<i className='fas fa-chevron-right'></i></button></a>
             </div>
         </ProjectsContainer>
     );
