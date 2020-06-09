@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import viewee1 from '../../img/viewee1.JPG';
+// import viewee1 from '../../img/viewee1.JPG';
 import loothunters1 from '../../img/loothunters1.JPG';
 import loothunters2 from '../../img/loothunters2.JPG';
 import readrr1 from '../../img/readrr1.JPG';

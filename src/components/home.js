@@ -47,7 +47,7 @@ const Home = () => {
 			<h1 ref={element => {name = element}}>miguel nicolas</h1>
 			<p ref={element => {bio = element}}>Hi! I'm a fullstack engineer based in New Jersey passionate about high-quality interfaces and pleasant user experiences.</p>
 			<div className='buttons' ref={element => {buttons = element}}>
-				{/* <Link to='/skills'><button>skills</button></Link> */}
+				<Link to='/skills'><button>skills</button></Link>
 				<Link to='/projects'><button>projects</button></Link>
 				<a href='https://drive.google.com/file/d/1Wxb1ke2bRlKGpkvZVlgHLhzlgu_f_qDo/view?usp=sharing' target='_blank' rel='noopener noreferrer'><button>resume</button></a>
 			</div>

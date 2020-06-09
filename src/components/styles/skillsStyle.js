@@ -10,8 +10,6 @@ const SkillsContainer = styled.div`
         margin-bottom: 16px;
         background: none;
         border: none;
-        display: flex;
-        align-items: center;
         font-family: 'Quicksand', sans-serif;
         font-size: 1rem;
         font-weight: 600;
@@ -20,8 +18,8 @@ const SkillsContainer = styled.div`
 
         i {
             margin: 0 4px;
-            font-size: 0.875rem;
-            transition: 0.5s;
+            font-size: 0.75rem;
+            transition: 0.25s;
         }
 
         :hover {
@@ -40,7 +38,54 @@ const SkillsContainer = styled.div`
         text-align: center;
     }
 
-    
+    h2 {
+        margin-bottom: 32px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #38416f;
+        text-align: center;
+    }
+
+    .group {
+        margin-bottom: 32px;
+
+        .item {
+            margin-bottom: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: 0.25s;
+
+            img {
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 600;
+                color: #766b93;
+            }
+
+            :hover {
+                transform: translateY(-8px);
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        width: 972.8px;
+
+        .group {
+            display: flex;
+            justify-content: center;
+
+            .item {
+                margin-right: 32px;
+                margin-bottom: 0;
+                margin-left: 32px;
+            }
+        }
+    }
 `;
 
 export default SkillsContainer;
