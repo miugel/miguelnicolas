@@ -257,7 +257,6 @@ const ProjectsContainer = styled.div`
 
         .project-container {
             display: flex;
-            align-content: flex-start;
             justify-content: space-between;
             flex-wrap: wrap;
             
