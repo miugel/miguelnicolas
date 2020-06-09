@@ -83,6 +83,10 @@ const Skills = props => {
                     <p>AWS</p>
                 </div>
             </div>
+
+            <div className='call-to-action'>
+                <a href='https://www.linkedin.com/in/miguelqnicolas/' target='_blank' rel='noopener noreferrer'><button>Find more on my LinkedIn!<i className='fas fa-chevron-right'></i></button></a>
+            </div>
         </SkillsContainer>
     );
 };

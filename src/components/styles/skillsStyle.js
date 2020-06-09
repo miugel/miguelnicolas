@@ -57,6 +57,7 @@ const SkillsContainer = styled.div`
             transition: 0.25s;
 
             img {
+                width: 80px;
                 margin-bottom: 8px;
             }
 
@@ -68,6 +69,38 @@ const SkillsContainer = styled.div`
 
             :hover {
                 transform: translateY(-8px);
+            }
+        }
+    }
+
+    .call-to-action {
+        display: flex;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+    
+            button {
+                background: none;
+                border: none;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 1rem;
+                font-weight: 600;
+                color: #38416f;
+                cursor: pointer;
+    
+                i {
+                    margin: 0 4px;
+                    font-size: 0.75rem;
+                    transition: 0.25s;
+                }
+    
+                :hover {
+                    i {
+                        margin-left: 8px;
+                        margin-right: 0;
+                    }
+                }
             }
         }
     }
