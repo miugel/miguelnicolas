@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ProjectsContainer from './styles/projectsStyle';
 
 const Projects = props => {
+    const [viewMore, setViewMore] = useState({
+        readrr: false,
+        loothunters: false,
+        opti: false
+    });
+
     return (
         <ProjectsContainer>
             <button className='back' onClick={() => props.history.push('/')}><i className='fas fa-chevron-left'></i>back</button>
@@ -27,10 +33,18 @@ const Projects = props => {
                     <a href='https://readrr.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>Readrr</h2>
-                        <p className='role'>Role: Fullstack</p>
+                        <p className='role'>Role: Fullstack engineer</p>
                         <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL | AWS</p>
-                        <p className='description'>A responsive web app that allows users to browse a database of books and manage their own library</p>
-                        {/* <p className='view-more'>view more</p> */}
+                        <p className='description'>
+                            A platform that allows users to browse a database of books and manage their own library
+                            <b className='view-more' onClick={() => setViewMore({...viewMore, readrr: !viewMore.readrr})}>{viewMore.readrr ? 'view less' : 'view more'}</b>
+                        </p>
+                        {viewMore.readrr && (
+                            <ul>
+                                <li>Implemented Google and Facebook authentication on the frontend and backend, providing a smooth onboarding process for 100s of users</li>
+                                <li>Built the frontend working closely with the designer, utilizing the agile methodology</li>
+                            </ul>
+                        )}
                         <a href='https://readrr.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/Lambda-School-Labs/betterreads-fe' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
@@ -42,7 +56,7 @@ const Projects = props => {
                         <h2>Apiary Keyboards</h2>
                         <p className='role'>Role: Sole engineer</p>
                         <p className='tech-stack'>React | styled-components | Stripe</p>
-                        <p className='description'>A responsive ecommerce site built for a small business that builds custom keyboards</p>
+                        <p className='description'>An ecommerce site built for a small business that builds custom keyboards</p>
                         <a href='https://apiarykeyboards.now.sh/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/miugel/apiarykeyboards' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
@@ -52,9 +66,17 @@ const Projects = props => {
                     <a href='https://loothunters.netlify.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>Loot Hunters 3</h2>
-                        <p className='role'>Role: Fullstack</p>
+                        <p className='role'>Role: Fullstack engineer</p>
                         <p className='tech-stack'>React | styled-components | Python | Django | PostgreSQL</p>
-                        <p className='description'>An adventure game with an infinite number of rooms to wander</p>
+                        <p className='description'>
+                            An adventure game with an infinite number of rooms to wander
+                            <b className='view-more' onClick={() => setViewMore({...viewMore, loothunters: !viewMore.loothunters})}>{viewMore.loothunters ? 'view less' : 'view more'}</b>
+                        </p>
+                        {viewMore.loothunters && (
+                            <ul>
+                                <li>Developed the entire user interface and integrated a Django backend enabling game functionality</li>
+                            </ul>
+                        )}
                         <a href='https://loothunters.netlify.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/loothunters3' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
@@ -72,7 +94,7 @@ const Projects = props => {
                     </div>
                 </div>
 
-                <div className='project'>
+                {/* <div className='project'>
                     <a href='https://bestbudapp.netlify.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>bestBud</h2>
@@ -82,15 +104,23 @@ const Projects = props => {
                         <a href='https://bestbudapp.netlify.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/Med-Cabinet-BW' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
-                </div>
+                </div> */}
 
                 <div className='project'>
                     <a href='https://opti.netlify.app/' target='_blank' rel='noopener noreferrer'><div className='project-image'></div></a>
                     <div className='project-description'>
                         <h2>Opti</h2>
-                        <p className='role'>Role: Frontend</p>
+                        <p className='role'>Role: Frontend engineer</p>
                         <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
-                        <p className='description'>A web app that uses historical data to determine the optimal price for an AirBnB listing</p>
+                        <p className='description'>
+                            A web app that uses historical data to determine the optimal price for an AirBnB listing
+                            <b className='view-more' onClick={() => setViewMore({...viewMore, opti: !viewMore.opti})}>{viewMore.opti ? 'view less' : 'view more'}</b>
+                        </p>
+                        {viewMore.opti && (
+                            <ul>
+                                <li>Developed the entire user interface and implemented a RESTful API enabling users to manage their own listings</li>
+                            </ul>
+                        )}
                         <a href='https://opti.netlify.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
                         <a href='https://github.com/Build-Week-Airbnb-Optimal-Price-4/Front-End' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>

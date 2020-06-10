@@ -7,8 +7,8 @@ import readrr2 from '../../img/projects/readrr2.JPG';
 import apiarykeyboards1 from '../../img/projects/apiarykeyboards1.JPG';
 import apiarykeyboards2 from '../../img/projects/apiarykeyboards2.JPG';
 import njcovid1 from '../../img/projects/njcovid1.JPG';
-import bestbud1 from '../../img/projects/bestbud1.JPG';
-import bestbud2 from '../../img/projects/bestbud2.JPG';
+// import bestbud1 from '../../img/projects/bestbud1.JPG';
+// import bestbud2 from '../../img/projects/bestbud2.JPG';
 import opti1 from '../../img/projects/opti1.JPG';
 import opti2 from '../../img/projects/opti2.JPG';
 import githubclone1 from '../../img/projects/githubclone1.JPG';
@@ -91,13 +91,31 @@ const ProjectsContainer = styled.div`
                 }
         
                 .description {
-                    margin-bottom: 16px;
                     font-size: 1rem;
                     font-weight: 600;
                     color: #766b93;
+
+                    b {
+                        margin-left: 16px;
+                        color: #38416f;
+                        cursor: pointer;
+                    }
+                }
+
+                ul {
+                    margin-top: 16px;
+                    margin-left: 16px;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: #766b93;
+
+                    li {
+                        margin-bottom: 8px;
+                    }
                 }
         
                 button {
+                    margin-top: 16px;
                     margin-right: 8px;
                     padding: 10px 16px;
                     background-color: #58caa8;
@@ -169,19 +187,19 @@ const ProjectsContainer = styled.div`
             }
         }
 
+        // .project:nth-child(5) {
+        //     .project-image {
+        //         background: url();
+        //         background-size: cover;
+
+        //         :hover {
+        //             background: url();
+        //             background-size: cover;
+        //         }
+        //     }
+        // }
+
         .project:nth-child(5) {
-            .project-image {
-                background: url(${bestbud1});
-                background-size: cover;
-
-                :hover {
-                    background: url(${bestbud2});
-                    background-size: cover;
-                }
-            }
-        }
-
-        .project:nth-child(6) {
             .project-image {
                 background: url(${opti1});
                 background-size: cover;
@@ -193,14 +211,14 @@ const ProjectsContainer = styled.div`
             }
         }
 
-        .project:nth-child(7) {
+        .project:nth-child(6) {
             .project-image {
                 background: url(${githubclone1});
                 background-size: cover;
             }
         }
 
-        .project:nth-child(8) {
+        .project:nth-child(7) {
             .project-image {
                 background: url(${miguelnicolas1});
                 background-size: cover;
@@ -258,6 +276,7 @@ const ProjectsContainer = styled.div`
         .project-container {
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
             flex-wrap: wrap;
             
             .project {
