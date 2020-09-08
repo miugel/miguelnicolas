@@ -49,7 +49,7 @@ const Home = () => {
 			<div className='buttons' ref={element => {buttons = element}}>
 				<Link to='/skills'><button>skills</button></Link>
 				<Link to='/projects'><button>projects</button></Link>
-				<a href='https://drive.google.com/file/d/1Wxb1ke2bRlKGpkvZVlgHLhzlgu_f_qDo/view?usp=sharing' target='_blank' rel='noopener noreferrer'><button>resume</button></a>
+				<a href='https://drive.google.com/file/d/1Kxs0I7sf5mA_V7PH-H6fFW9dEP68ZO8w/view?usp=sharing' target='_blank' rel='noopener noreferrer'><button>resume</button></a>
 			</div>
 			<div className='social-media' ref={element => {socialMedia = element}}>
 				<a href='https://github.com/miugel' target='_blank' rel='noopener noreferrer'><button className='github'><i className='fab fa-github'></i></button></a>
