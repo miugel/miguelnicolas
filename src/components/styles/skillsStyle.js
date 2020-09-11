@@ -4,7 +4,7 @@ const SkillsContainer = styled.div`
     width: 95%;
     margin: 0 auto;
     margin-top: 64px;
-    margin-bottom: 64px;
+    margin-bottom: 128px;
 
     .back {
         margin-bottom: 16px;
