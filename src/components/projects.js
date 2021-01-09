@@ -102,7 +102,7 @@ const Projects = props => {
                         <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
                         <p className='description'>A web app that educates new medical cannabis consumers and allows them to find the right strain as a means to battle medical conditions and ailments</p>
                         <a href='https://bestbudapp.netlify.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
-                        <a href='https://github.com/Med-Cabinet-BW' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                        <a href='https://github.com/bestbudapp' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div> */}
 
@@ -122,7 +122,7 @@ const Projects = props => {
                             </ul>
                         )}
                         <a href='https://opti.netlify.app/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
-                        <a href='https://github.com/Build-Week-Airbnb-Optimal-Price-4/Front-End' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                        <a href='https://github.com/tryopti/frontend' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
@@ -159,7 +159,7 @@ const Projects = props => {
                         <p className='tech-stack'>React | CSS | GreenSock | Node | Express | PostgreSQL</p>
                         <p className='description'>A web app that connects farmers with a surplus amount of food and their community.</p>
                         <a href='https://farmfreshapp.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
-                        <a href='https://github.com/farmFreshProduce/frontEnd' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                        <a href='https://github.com/farmfreshapp/frontend' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
@@ -185,7 +185,7 @@ const Projects = props => {
                         <p className='tech-stack'>React | styled-components | Node | Express | PostgreSQL</p>
                         <p className='description'>A real estate investment analyzer</p>
                         <a href='https://numbersapp.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
-                        <a href='https://github.com/numbersapp/Front-End' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                        <a href='https://github.com/numbersapp/frontend' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
@@ -202,6 +202,7 @@ const Projects = props => {
                     </div>
                 </div>
 
+                Project deleted
                 <div className='project'>
                     <div className='project-image'>
                         <a href='https://netflixclone.guacdev.com/' target='_blank' rel='noopener noreferrer'><img src={netflixclone} alt='netflix clone'/></a>
@@ -224,7 +225,7 @@ const Projects = props => {
                         <p className='tech-stack'>HTML | CSS | JavaScript</p>
                         <p className='description'>A retirement advisor that estimates your retirement date based on your current habits.</p>
                         <a href='https://whenwilliretire.tech/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
-                        <a href='https://github.com/miugel/When-Will-I-Retire' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                        <a href='https://github.com/miugel/whenwilliretire' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
@@ -237,7 +238,7 @@ const Projects = props => {
                         <p className='tech-stack'>HTML | CSS</p>
                         <p className='description'>A bill-splitting app</p>
                         <a href='https://splitapp.netlify.com/' target='_blank' rel='noopener noreferrer'><button>view project</button></a>
-                        <a href='https://github.com/build-sprint-split-the-bill/ui-interface-miguel' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
+                        <a href='https://github.com/trysplit/user-interface-miguel' target='_blank' rel='noopener noreferrer'><button>view source</button></a>
                     </div>
                 </div>
 
