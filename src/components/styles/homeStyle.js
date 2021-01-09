@@ -24,6 +24,11 @@ const HomeContainer = styled.div`
 		color: #766b93;
 		text-align: center;
 		opacity: 0;
+
+		img {
+			height: 20px;
+			margin-bottom: -3px;
+		}
 	}
 
 	.buttons {

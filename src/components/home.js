@@ -45,7 +45,7 @@ const Home = () => {
     return (
         <HomeContainer>
 			<h1 ref={element => {name = element}}>miguel nicolas</h1>
-			<p ref={element => {bio = element}}>Hi! I'm a software engineer based in New Jersey passionate about high-quality interfaces and pleasant user experiences.</p>
+			<p ref={element => {bio = element}}>Hi! I'm a software engineer based in New Jersey passionate about high-quality interfaces and pleasant user experiences. Currently at Shopify <img src='https://assets.stickpng.com/images/58482ec0cef1014c0b5e4a70.png' alt='Shopify logo' /></p>
 			<div className='buttons' ref={element => {buttons = element}}>
 				<Link to='/skills'><button>skills</button></Link>
 				<Link to='/projects'><button>projects</button></Link>
