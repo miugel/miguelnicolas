@@ -1,61 +1,52 @@
 import React, { useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { gsap, TweenMax, Power3 } from 'gsap';
+import { socials } from 'assets';
 import { HomeContainer } from './styles';
 
 gsap.registerPlugin(TweenMax, Power3);
 
 export const Home = () => {
     let name = useRef(null);
-    let bio = useRef(null);
-    let buttons = useRef(null);
-    let socialMedia = useRef(null);
+    let about = useRef(null);
+    let socialButtons = useRef(null);
 
     useEffect(() => {
         TweenMax.to(name, 1, {
                 opacity: 1,
-                y: -50,
+                y: -48,
                 ease: Power3.easeOut,
-                delay: 0.1
+                delay: 0.15
             }
         );
-        TweenMax.to(bio, 1, {
+        TweenMax.to(about, 1, {
                 opacity: 1,
-                y: -50,
-                ease: Power3.easeOut,
-                delay: 0.2
-            }
-        );
-        TweenMax.to(buttons, 1, {
-                opacity: 1,
-                y: -50,
+                y: -48,
                 ease: Power3.easeOut,
                 delay: 0.3
             }
         );
-        TweenMax.to(socialMedia, 1, {
+        TweenMax.to(socialButtons, 1, {
                 opacity: 1,
-                y: -50,
+                y: -48,
                 ease: Power3.easeOut,
-                delay: 0.4
+                delay: 0.45
             }
         );
-    }, [])
+    });
 
     return (
         <HomeContainer>
-			<h1 ref={element => {name = element}}>miguel nicolas</h1>
-			<p ref={element => {bio = element}}>Hi! I'm a software developer based in New Jersey passionate about high-quality interfaces and pleasant user experiences. Currently at Shopify <img src={shopify} alt='Shopify logo' /></p>
-			<div className='buttons' ref={element => {buttons = element}}>
-				<Link to='/skills'><button>skills</button></Link>
-				<Link to='/projects'><button>projects</button></Link>
-				{/* <a href='https://drive.google.com/file/d/15FJF3V6TnPtjIUAE-ROSYPVRUe8qj8Z-/view?usp=sharing' target='_blank' rel='noopener noreferrer'><button>resume</button></a> */}
-			</div>
-			<div className='social-media' ref={element => {socialMedia = element}}>
-				<a href='https://github.com/miugel' target='_blank' rel='noopener noreferrer'><button className='github'><i className='fab fa-github'></i></button></a>
-				<a href='https://www.linkedin.com/in/miguelqnicolas/' target='_blank' rel='noopener noreferrer'><button className='linkedin'><i className='fab fa-linkedin-in'></i></button></a>
-				<a href='mailto:miguelqnicolas@gmail.com' target='_blank' rel='noopener noreferrer'><button className='mail'><i className='fas fa-envelope'></i></button></a>
-			</div>
-		</HomeContainer>
+            <h1 className='name no-opacity' ref={element => {name = element}}>miguel nicolas</h1>
+            <p className='about no-opacity' ref={element => {about = element}}>
+                Hi! I'm a software developer based in New Jersey passionate about high-quality interfaces and pleasant user experiences. Currently at <a className='company-link' href='https://www.shopify.com/about' target='_blank' rel='noopener noreferrer'>Shopify</a>.
+            </p>
+            <div className='social-buttons no-opacity' ref={element => {socialButtons = element}}>
+                {socials.map((social, index) => (
+                    <a href={social.link} target='_blank' rel='noopener noreferrer' key={index}>
+                        <button className={social.name}><i className={social.icon}></i></button>
+                    </a>
+                ))}
+            </div>
+        </HomeContainer>
     );
 };
