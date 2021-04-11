@@ -1,0 +1,12 @@
+export { default as aws } from './aws.png';
+export { default as css } from './css.png';
+export { default as express } from './express.png';
+export { default as git } from './git.png';
+export { default as html } from './html.png';
+export { default as javascript } from './javascript.png';
+export { default as node } from './node.png';
+export { default as postgresql } from './postgresql.png';
+export { default as python } from './python.png';
+export { default as react } from './react.png';
+export { default as sass } from './sass.png';
+export { default as styledcomponents } from './styled-components.png';

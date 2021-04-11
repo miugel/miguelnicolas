@@ -1,92 +1,31 @@
 import React from 'react';
+import { skills } from 'assets';
+import { Breadcrumbs, CallToAction } from './common';
 import { SkillsContainer } from './styles';
-import html from '../assets/images/skills/html.png';
-import css from '../assets/images/skills/css.png';
-import javascript from '../assets/images/skills/javascript.png';
-import python from '../assets/images/skills/python.png';
-import react from '../assets/images/skills/react.png';
-import styledcomponents from '../assets/images/skills/styled-components.png';
-import sass from '../assets/images/skills/sass.png';
-import node from '../assets/images/skills/node.png';
-import express from '../assets/images/skills/express.png';
-import postgresql from '../assets/images/skills/postgresql.png';
-import git from '../assets/images/skills/git.png';
-import aws from '../assets/images/skills/aws.png';
+import * as images from 'assets/images/skills';
 
-export const Skills = props => {
+export const Skills = () => {
     return (
         <SkillsContainer>
-            <button className='back' onClick={() => props.history.push('/')}><i className='fas fa-chevron-left'></i>back</button>
+            <Breadcrumbs />
 
             <h1>skills</h1>
 
-            <h2>languages</h2>
-            <div className='group'>
-                <div className='item'>
-                    <img src={html} alt='html' />
-                    <p>HTML</p>
+            {skills.map((category, index) => (
+                <div key={index}>
+                    <h2>{category.category}</h2>
+                    <div className='category'>
+                        {category.items.map((skill, id) => (
+                            <div className='skill' key={id}>
+                                <img src={images[skill.toLowerCase().replace(/-/g, '')]} alt={skill} />
+                                <p>{skill}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-                <div className='item'>
-                    <img src={css} alt='css' />
-                    <p>CSS</p>
-                </div>
-                <div className='item'>
-                    <img src={javascript} alt='javascript' />
-                    <p>JavaScript</p>
-                </div>
-                <div className='item'>
-                    <img src={python} alt='python' />
-                    <p>Python</p>
-                </div>
-            </div>
+            ))}
 
-            <h2>frontend</h2>
-            <div className='group'>
-                <div className='item'>
-                    <img src={react} alt='react' />
-                    <p>React</p>
-                </div>
-                <div className='item'>
-                    <img src={styledcomponents} alt='styled-components' />
-                    <p>styled-components</p>
-                </div>
-                <div className='item'>
-                    <img src={sass} alt='sass' />
-                    <p>Sass</p>
-                </div>
-            </div>
-
-            <h2>backend</h2>
-            <div className='group'>
-                <div className='item'>
-                    <img src={node} alt='node' />
-                    <p>Node</p>
-                </div>
-                <div className='item'>
-                    <img src={express} alt='express' />
-                    <p>Express</p>
-                </div>
-                <div className='item'>
-                    <img src={postgresql} alt='postgresql' />
-                    <p>PostgreSQL</p>
-                </div>
-            </div>
-
-            <h2>general technologies</h2>
-            <div className='group'>
-                <div className='item'>
-                    <img src={git} alt='git' />
-                    <p>Git</p>
-                </div>
-                <div className='item'>
-                    <img src={aws} alt='aws' />
-                    <p>AWS</p>
-                </div>
-            </div>
-
-            <div className='call-to-action'>
-                <a href='https://www.linkedin.com/in/miguelqnicolas/' target='_blank' rel='noopener noreferrer'><button>Find more on my LinkedIn!<i className='fas fa-chevron-right'></i></button></a>
-            </div>
+            <CallToAction link='https://www.linkedin.com/in/miguelqnicolas/' text='Check out my LinkedIn for more!' />
         </SkillsContainer>
     );
 };
