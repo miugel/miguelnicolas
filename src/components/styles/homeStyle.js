@@ -1,61 +1,39 @@
 import styled from 'styled-components';
 
-const HomeContainer = styled.div`
-    height: 100vh;
-	width: 95%;
-	margin: 0 auto;
+export const HomeContainer = styled.div`
+	align-items: center;
 	display: flex;
 	flex-direction: column;
+	height: 100vh;
 	justify-content: center;
-	align-items: center;
+	margin: 0 auto;
+	width: 95%;
 
-	h1 {
+	.name {
 		margin-bottom: 8px;
 		font-size: 2.5rem;
-		font-weight: 700;
-		color: #38416f;
-		opacity: 0;
 	}
 
-	p {
+	.about {
 		margin-bottom: 16px;
-		font-size: 1rem;
-		font-weight: 600;
-		color: #766b93;
 		text-align: center;
-		opacity: 0;
+	}
 
-		img {
-			height: 20px;
-			margin-bottom: -3px;
+	.company-link {
+		color: #58caa8;
+		transition: 0.25s;
+		
+		:hover {
+			color: #766b93;
 		}
 	}
 
-	.buttons {
+	.navigation-buttons {
 		margin-bottom: 16px;
-		display: flex;
-		justify-content: space-evenly;
-		opacity: 0;
 
 		a {
 			button {
-				padding: 10px 24px;
 				margin-right: 8px;
-				background-color: #58caa8;
-				border: 1px solid #58caa8;
-				border-radius: 3px;
-				outline: none;
-				font-family: 'Quicksand', sans-serif;
-				font-size: 0.875rem;
-				font-weight: 600;
-				color: #ffffff;
-				cursor: pointer;
-				transition: 0.5s;
-
-				:hover {
-					background-color: #e6edfc;
-					color: #58caa8;
-				}
 			}
 
 			:last-child {
@@ -66,40 +44,31 @@ const HomeContainer = styled.div`
 		}
 	}
 
-	.social-media {
+	.social-buttons {
 		display: flex;
-		opacity: 0;
 
 		a {
-			text-decoration: none;
-
 			button {
-				height: 48px;
-				width: 48px;
-				margin-right: 8px;
+				align-items: center;
 				background: none;
 				border-radius: 50%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
 				cursor: pointer;
-				transition: 0.5s;
+				display: flex;
+				height: 48px;
+				justify-content: center;
+				margin-right: 8px;
+				transition: 0.25s;
+				width: 48px;
 
 				i {
 					font-size: 1.5rem;
-					transition: 0.5s;
+					transition: 0.25s;
 				}
 
 				:hover {
 					i {
 						color: #ffffff;
 					}
-				}
-			}
-
-			:last-child {
-				button {
-					margin-right: 0;
 				}
 			}
 
@@ -123,28 +92,36 @@ const HomeContainer = styled.div`
 				}
 
 				:hover {
-					background: #2867B2;
+					background: #2867b2;
 				}
 			}
 
-			.mail {
+			.email {
 				border: 1px solid #d44638;
 
 				i {
-					font-size: 1.4rem;
 					color: #d44638;
+					font-size: 1.4rem;
 				}
 
 				:hover {
 					background: #d44638;
 				}
 			}
+
+			:last-child {
+				button {
+					margin-right: 0;
+				}
+			}
 		}
 	}
 
+	.no-opacity {
+		opacity: 0;
+	}
+
 	@media (min-width: 768px) {
-		width: 691.2px;
+		max-width: 691.2px;
 	}
 `;
-
-export default HomeContainer;

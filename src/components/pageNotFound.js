@@ -1,14 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PageNotFoundContainer from './styles/pageNotFoundContainer';
+import styled from 'styled-components';
+import { Button } from './common';
 
-const PageNotFound = () => {
-    return (
-        <PageNotFoundContainer>
-            <h1>Page not found</h1>
-            <Link to='/'><button>Go back</button></Link>
-        </PageNotFoundContainer>
-    );
-};
+export const PageNotFoundContainer = styled.div`
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+`;
 
-export default PageNotFound;
+export const PageNotFound = () => (
+    <PageNotFoundContainer>
+        <h1>Page not found</h1>
+        <Link to='/'><Button text='Go back' /></Link>
+    </PageNotFoundContainer>
+);
