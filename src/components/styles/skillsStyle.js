@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SkillsContainer = styled.div`
+export const SkillsContainer = styled.div`
     width: 95%;
     margin: 0 auto;
     margin-top: 64px;
@@ -120,5 +120,3 @@ const SkillsContainer = styled.div`
         }
     }
 `;
-
-export default SkillsContainer;

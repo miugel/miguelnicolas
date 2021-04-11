@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const HomeContainer = styled.div`
+export const HomeContainer = styled.div`
     height: 100vh;
 	width: 95%;
 	margin: 0 auto;
@@ -127,7 +127,7 @@ const HomeContainer = styled.div`
 				}
 			}
 
-			.mail {
+			.email {
 				border: 1px solid #d44638;
 
 				i {
@@ -146,5 +146,3 @@ const HomeContainer = styled.div`
 		width: 691.2px;
 	}
 `;
-
-export default HomeContainer;

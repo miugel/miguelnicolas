@@ -1,20 +1,20 @@
 import styled from 'styled-components';
-// import viewee1 from '../../img/projects/viewee1.JPG';
-import loothunters1 from '../../img/projects/loothunters1.JPG';
-import loothunters2 from '../../img/projects/loothunters2.JPG';
-import readrr1 from '../../img/projects/readrr1.JPG';
-import readrr2 from '../../img/projects/readrr2.JPG';
-import apiarykeyboards1 from '../../img/projects/apiarykeyboards1.JPG';
-import apiarykeyboards2 from '../../img/projects/apiarykeyboards2.JPG';
-import njcovid1 from '../../img/projects/njcovid1.JPG';
-// import bestbud1 from '../../img/projects/bestbud1.JPG';
-// import bestbud2 from '../../img/projects/bestbud2.JPG';
-import opti1 from '../../img/projects/opti1.JPG';
-import opti2 from '../../img/projects/opti2.JPG';
-import githubclone1 from '../../img/projects/githubclone1.JPG';
-import miguelnicolas1 from '../../img/projects/miguelnicolas1.JPG';
+// import viewee1 from '../../assets/images/projects/viewee1.JPG';
+import loothunters1 from '../../assets/images/projects/loothunters1.JPG';
+import loothunters2 from '../../assets/images/projects/loothunters2.JPG';
+import readrr1 from '../../assets/images/projects/readrr1.JPG';
+import readrr2 from '../../assets/images/projects/readrr2.JPG';
+import apiarykeyboards1 from '../../assets/images/projects/apiarykeyboards1.JPG';
+import apiarykeyboards2 from '../../assets/images/projects/apiarykeyboards2.JPG';
+import njcovid1 from '../../assets/images/projects/njcovid1.JPG';
+// import bestbud1 from '../../assets/images/projects/bestbud1.JPG';
+// import bestbud2 from '../../assets/images/projects/bestbud2.JPG';
+import opti1 from '../../assets/images/projects/opti1.JPG';
+import opti2 from '../../assets/images/projects/opti2.JPG';
+import githubclone1 from '../../assets/images/projects/githubclone1.JPG';
+import miguelnicolas1 from '../../assets/images/projects/miguelnicolas1.JPG';
 
-const ProjectsContainer = styled.div`
+export const ProjectsContainer = styled.div`
     width: 95%;
     margin: 0 auto;
     margin-top: 64px;
@@ -289,5 +289,3 @@ const ProjectsContainer = styled.div`
         }
     }
 `;
-
-export default ProjectsContainer;

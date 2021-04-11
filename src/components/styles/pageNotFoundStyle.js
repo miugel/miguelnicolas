@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const PageNotFoundContainer = styled.div`
+export const PageNotFoundContainer = styled.div`
     height: 85vh;
     display: flex;
     flex-direction: column;
@@ -32,5 +32,3 @@ const PageNotFoundContainer = styled.div`
         }
     }
 `;
-
-export default PageNotFoundContainer;

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ProjectsContainer from './styles/projectsStyle';
+import { ProjectsContainer } from './styles';
 
-const Projects = props => {
+export const Projects = props => {
     const [viewMore, setViewMore] = useState({
         readrr: false,
         loothunters: false,
@@ -263,5 +263,3 @@ const Projects = props => {
         </ProjectsContainer>
     );
 };
-
-export default Projects;

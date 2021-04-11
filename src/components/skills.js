@@ -1,19 +1,19 @@
 import React from 'react';
-import SkillsContainer from './styles/skillsStyle';
-import html from '../img/skills/html.png';
-import css from '../img/skills/css.png';
-import javascript from '../img/skills/javascript.png';
-import python from '../img/skills/python.png';
-import react from '../img/skills/react.png';
-import styledcomponents from '../img/skills/styled-components.png';
-import sass from '../img/skills/sass.png';
-import node from '../img/skills/node.png';
-import express from '../img/skills/express.png';
-import postgresql from '../img/skills/postgresql.png';
-import git from '../img/skills/git.png';
-import aws from '../img/skills/aws.png';
+import { SkillsContainer } from './styles';
+import html from '../assets/images/skills/html.png';
+import css from '../assets/images/skills/css.png';
+import javascript from '../assets/images/skills/javascript.png';
+import python from '../assets/images/skills/python.png';
+import react from '../assets/images/skills/react.png';
+import styledcomponents from '../assets/images/skills/styled-components.png';
+import sass from '../assets/images/skills/sass.png';
+import node from '../assets/images/skills/node.png';
+import express from '../assets/images/skills/express.png';
+import postgresql from '../assets/images/skills/postgresql.png';
+import git from '../assets/images/skills/git.png';
+import aws from '../assets/images/skills/aws.png';
 
-const Skills = props => {
+export const Skills = props => {
     return (
         <SkillsContainer>
             <button className='back' onClick={() => props.history.push('/')}><i className='fas fa-chevron-left'></i>back</button>
@@ -90,5 +90,3 @@ const Skills = props => {
         </SkillsContainer>
     );
 };
-
-export default Skills;

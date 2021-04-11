@@ -1,19 +1,18 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import Home from './components/home';
-import Projects from './components/projects';
-import Skills from './components/skills';
-import PageNotFound from './components/pageNotFound';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Home, PageNotFound, Projects, Skills } from './components';
+import { GlobalContainer } from './assets';
 
-const App = () => {
-	return (
-		<Switch>
-			<Route exact path='/' component={Home} />
-			<Route path='/projects' component={Projects} />
-			<Route path='/skills' component={Skills} />
-			<Route component={PageNotFound} />
-		</Switch>
-	);
-};
-
-export default App;
+export const App = () => (
+	<>
+		<GlobalContainer />
+		<Router>
+			<Switch>
+				<Route exact path='/' component={Home} />
+				<Route path='/projects' component={Projects} />
+				<Route path='/skills' component={Skills} />
+				<Route component={PageNotFound} />
+			</Switch>
+		</Router>
+	</>
+);

@@ -1,12 +1,11 @@
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import HomeContainer from './styles/homeStyle';
 import { gsap, TweenMax, Power3 } from 'gsap';
-import shopify from '../img/home/shopify.png';
+import { HomeContainer } from './styles';
 
 gsap.registerPlugin(TweenMax, Power3);
 
-const Home = () => {
+export const Home = () => {
     let name = useRef(null);
     let bio = useRef(null);
     let buttons = useRef(null);
@@ -60,5 +59,3 @@ const Home = () => {
 		</HomeContainer>
     );
 };
-
-export default Home;
