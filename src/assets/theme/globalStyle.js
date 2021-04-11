@@ -13,4 +13,22 @@ export const GlobalContainer = createGlobalStyle`
         background: #e6edfc;
         font-family: 'Quicksand', sans-serif;
     }
+    
+    h1 {
+        color: #38416f;
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        color: #38416f;
+    }
+
+    p {
+		color: #766b93;
+		font-weight: 600;
+    }
+
+    a {
+        text-decoration: none;
+    }
 `;
