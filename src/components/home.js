@@ -48,7 +48,7 @@ export const Home = () => {
         <HomeContainer>
             <h1 className='name no-opacity' ref={element => {name = element}}>miguel nicolas</h1>
             <p className='about no-opacity' ref={element => {about = element}}>
-                Hi! I'm a software developer based in New Jersey passionate about high-quality interfaces and pleasant user experiences. Currently at <a className='company-link' href='https://www.shopify.com/about' target='_blank' rel='noopener noreferrer'>Shopify</a>.
+                Hi! I'm a software engineer based in New Jersey passionate about high-quality interfaces and pleasant user experiences. Currently at <a className='company-link' href='https://www.shopify.com/about' target='_blank' rel='noopener noreferrer'>Shopify</a>.
             </p>
             <div className='navigation-buttons no-opacity' ref={element => {navigationButtons = element}}>
                 <Link to='/skills'><Button text='skills' /></Link>
