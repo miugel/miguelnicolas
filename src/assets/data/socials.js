@@ -7,7 +7,7 @@ export const socials = [
     {
         name: 'linkedin',
         icon: 'fab fa-linkedin-in',
-        link: 'https://www.linkedin.com/in/miguelqnicolas/'
+        link: 'https://www.linkedin.com/in/miguelnicolasq/'
     },
     {
         name: 'email',
